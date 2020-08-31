@@ -8,6 +8,22 @@ $arUrlRewrite=array (
     'PATH' => '/kontakti/filialyi/index.php',
     'SORT' => 100,
   ),
+  5 => 
+  array (
+    'CONDITION' => '#^/kontakti/fdileryi/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '#^/kontakti/fdileryi/#',
+    'SORT' => 100,
+  ),
+  6 => 
+  array (
+    'CONDITION' => '#^/kontakti/dileryi/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/kontakti/dileryi/index.php',
+    'SORT' => 100,
+  ),
   1 => 
   array (
     'CONDITION' => '#^/o-kompanii/foto/#',

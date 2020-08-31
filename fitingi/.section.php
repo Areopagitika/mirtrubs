@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Фитинги";
+$arDirProperties = Array(
+
+);
+?>

@@ -1,17 +1,13 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Дилеры группы заводов #SITE_NAME#");
-$APPLICATION->SetPageProperty("description", "Дилеры группы заводов #SITE_NAME#");
-$APPLICATION->SetTitle("Дилеры");
-?><div itemscope="" itemtype="https://schema.org/Article">
-	<div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
-		 <?$APPLICATION->IncludeComponent(
+$APPLICATION->SetTitle("Полиэтиленовые трубы");
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:news",
-	"dileryi",
+	"",
 	Array(
-		"ADD_ELEMENT_CHAIN" => "Y",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"AJAX_MODE" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_JUMP" => "N",
@@ -25,7 +21,7 @@ $APPLICATION->SetTitle("Дилеры");
 		"CATEGORY_IBLOCK" => array(),
 		"CATEGORY_ITEMS_COUNT" => "5",
 		"CHECK_DATES" => "Y",
-		"DETAIL_ACTIVE_DATE_FORMAT" => "",
+		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 		"DETAIL_DISPLAY_TOP_PAGER" => "Y",
 		"DETAIL_FIELD_CODE" => array("",""),
@@ -35,23 +31,23 @@ $APPLICATION->SetTitle("Дилеры");
 		"DETAIL_PROPERTY_CODE" => array("",""),
 		"DETAIL_SET_CANONICAL_URL" => "Y",
 		"DISPLAY_AS_RATING" => "rating",
-		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_TOP_PAGER" => "Y",
 		"FILE_404" => "",
 		"FILTER_FIELD_CODE" => array("",""),
 		"FILTER_NAME" => "",
 		"FILTER_PROPERTY_CODE" => array("",""),
 		"FORUM_ID" => "",
-		"GROUP_PERMISSIONS" => "",
+		"GROUP_PERMISSIONS" => array("1"),
 		"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
-		"IBLOCK_ID" => "9",
-		"IBLOCK_TYPE" => "content",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"LIST_ACTIVE_DATE_FORMAT" => "",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "products",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array("",""),
 		"LIST_PROPERTY_CODE" => array("",""),
 		"MAX_VOTE" => "5",
@@ -75,41 +71,34 @@ $APPLICATION->SetTitle("Дилеры");
 		"POST_FIRST_MESSAGE" => "Y",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"REVIEW_AJAX_POST" => "Y",
-		"SEF_FOLDER" => "/kontakti/dileryi/",
-		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#/","news"=>"","rss"=>"rss/","rss_section"=>"#SECTION_ID#/rss/","search"=>"search/","section"=>""),
+		"SEF_MODE" => "N",
 		"SET_LAST_MODIFIED" => "Y",
 		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
-		"SHARE_HANDLERS" => "",
+		"SHARE_HANDLERS" => array("delicious","facebook","lj","twitter"),
 		"SHARE_HIDE" => "Y",
 		"SHARE_SHORTEN_URL_KEY" => "",
 		"SHARE_SHORTEN_URL_LOGIN" => "",
 		"SHARE_TEMPLATE" => "",
 		"SHOW_404" => "Y",
 		"SHOW_LINK_TO_FORUM" => "Y",
-		"SORT_BY1" => "ID",
-		"SORT_BY2" => "ID",
-		"SORT_ORDER1" => "ASC",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "Y",
 		"URL_TEMPLATES_READ" => "",
 		"USE_CAPTCHA" => "Y",
 		"USE_CATEGORIES" => "Y",
 		"USE_FILTER" => "Y",
-		"USE_PERMISSIONS" => "N",
+		"USE_PERMISSIONS" => "Y",
 		"USE_RATING" => "Y",
 		"USE_REVIEW" => "Y",
 		"USE_RSS" => "Y",
 		"USE_SEARCH" => "Y",
 		"USE_SHARE" => "Y",
+		"VARIABLE_ALIASES" => Array("ELEMENT_ID"=>"ELEMENT_ID","SECTION_ID"=>"SECTION_ID","detail"=>"={Array()}","news"=>"={Array()}","section"=>"={Array()}"),
 		"VOTE_NAMES" => array("0","1","2","3","4",""),
 		"YANDEX" => "Y"
 	)
-);?>
-	</div>
-	<div class="neighbors d-flex justify-content-between">
- <span class="link-prev"><a href="/kontakti/filialyi/"><i class="fa fa-long-arrow-left"></i> Филиалы</a></span><span class="link-next"><a href="/kontakti/bal">Полиэтиленовые трубы в Балашихе <i class="fa fa-long-arrow-right"></i></a></span>
-	</div>
-</div>
- <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

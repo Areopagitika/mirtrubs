@@ -1,36 +1,38 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 
-<? if($APPLICATION->GetCurDir() != '/' && $APPLICATION->GetCurDir() != '/o-kompanii/nashi-lica/'): ?>
-      </div>
-      <div class="col-md-3">
-        <div class="left-menu">
-                      
-        </div>
-        <div class="garant">
-          <div class="title">Наши гарантии</div>
-          <div class="text">
-            <img src="<?=SITE_TEMPLATE_PATH; ?>/images/garantiya-kachestva.png" alt="Гарантия качества - ТрубПласт">
-            <p><b>Почему более 65% наших клиентов становятся постоянными?</b></p>
-            <ul>
-              <li><i class="fa fa-check"></i> Строго закрепляем объекты.</li>
-              <li><i class="fa fa-check"></i> Жестко прописываем сроки поставок в договоре.</li>
-              <li><i class="fa fa-check"></i> Отгружаем по п/п.</li>
-              <li><i class="fa fa-check"></i> Глубокие скидки на крупный опт и предзаказ.</li>
-              <li><i class="fa fa-check"></i> Свой автопарк.</li>
-              <li><i class="fa fa-check"></i> Есть доставка ж/д.</li>
-              <li><i class="fa fa-check"></i> Круглосуточный прием заявок и отгрузки.</li>
-            </ul>
+<? if($APPLICATION->GetCurDir() != '/'): ?>
+  <? if($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<? elseif($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
+    </section>
+  <? else: ?>
+          </div>
+          <div class="col-md-3">
+            <div class="left-menu">
+                          
+            </div>
+            <div class="garant">
+              <div class="title">Наши гарантии</div>
+              <div class="text">
+                <img src="<?=SITE_TEMPLATE_PATH; ?>/images/garantiya-kachestva.png" alt="Гарантия качества - ТрубПласт">
+                <p><b>Почему более 65% наших клиентов становятся постоянными?</b></p>
+                <ul>
+                  <li><i class="fa fa-check"></i> Строго закрепляем объекты.</li>
+                  <li><i class="fa fa-check"></i> Жестко прописываем сроки поставок в договоре.</li>
+                  <li><i class="fa fa-check"></i> Отгружаем по п/п.</li>
+                  <li><i class="fa fa-check"></i> Глубокие скидки на крупный опт и предзаказ.</li>
+                  <li><i class="fa fa-check"></i> Свой автопарк.</li>
+                  <li><i class="fa fa-check"></i> Есть доставка ж/д.</li>
+                  <li><i class="fa fa-check"></i> Круглосуточный прием заявок и отгрузки.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  <? endif;?>
 <? endif; ?>
 
 <footer itemscope itemtype="http://schema.org/Organization">

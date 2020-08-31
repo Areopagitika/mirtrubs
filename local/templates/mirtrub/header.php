@@ -174,102 +174,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>    
   </div>
 </header>
-<div class="sticky-top">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <nav class="menu" id="menu">
-          <ul>
-            <li>
-              <a href="#" data-toggle="modal" data-target=".order">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span style="font-size:10px;opacity: 0.5;">Быстрый заказ</span>
-              </a> 
-            </li>
-
-            <li class="first">
-              <a href="polietilenovie-trubi/">Полиэтиленовые трубы</a>
-              <ul class="">
-                <li class="first"><a href="polietilenovie-trubi/trubi-dlya-vodosnabjeniya/">Трубы для воды</a></li>
-                <li><a href="polietilenovie-trubi/trubi-dlya-gazoprovodov/">Трубы для газа</a></li>
-                <li class="last"><a href="polietilenovie-trubi/trubyi-dlya-kanalizaczii/">Трубы для канализации</a></li>
-              </ul>
-            </li>
-            <li><a href="trubyi-mirtekt/">Трубы с защитой</a>
-              <ul class="">
-                <li class="first"><a href="trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-vodyi/">Трубы в защитной оболочке для воды</a></li>
-                <li class="last"><a href="trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/">Трубы в защитной оболочке для газа</a></li>
-              </ul>
-            </li>
-            <li><a href="fitingi/">Фитинги</a>
-              <ul class="">
-                <li class="first"><a href="fitingi/fitingi-elektrosvarnyie/">Фитинги электросварные</a></li>
-                <li><a href="fitingi/fitingi-lityie/">Фитинги литые</a></li>
-                <li><a href="fitingi/fitingi-segmentnyie/">Фитинги сегментные (сварные)</a></li>
-                <li class="last"><a href="fitingi/fitingi-kompressionnyie/">Фитинги компрессионные</a></li>
-              </ul>
-            </li>
-            <li><a href="svarochnoe-oborudovanie/">Сварочное оборудование</a></li>
-            <li class="last"><a href="oflaczovannyie-izdeliya/">Офланцованные изделия</a></li>
-            
-            <ul class="d-sm-block d-md-none">
-              <li class="first"><a href="o-kompanii/">О компании</a>
-              <ul class="">
-                <li class="first"><a href="o-kompanii/istoriya-kompanii">История компании</a></li>
-                <li><a href="o-kompanii/proizvodstvo">Производство</a></li>
-                <li><a href="o-kompanii/nashi-lica">Наш коллектив</a></li>
-                <li><a href="o-kompanii/foto/">Фотогалерея</a></li>
-                <li><a href="o-kompanii/diplomi-blagodarnosti">Дипломы и благодарности</a></li>
-                <li><a href="o-kompanii/sertifikaty/">Документация</a>
-                  <ul class="">
-                    <li class="first"><a href="o-kompanii/sertifikaty/gostyi">ГОСТы</a></li>
-                    <li class="last"><a href="o-kompanii/sertifikaty/katalogi-trub">Каталоги труб</a></li>
-                  </ul>
-                </li>
-                <li class="last"><a href="o-kompanii/otzivi/">Отзывы</a></li>
-              </ul>
-              </li><li><a href="delivery">Доставка</a></li>
-              <li><a href="news/">Новости</a></li>
-              <li><a href="vakansii">Вакансии</a></li>
-              <li class="last"><a href="kontakti/">Контакты</a>
-                <ul class="">
-                  <li class="first"><a href="kontakti/filialyi/">Филиалы</a></li>
-                  <li class="last"><a href="kontakti/dileryi/">Дилеры</a></li>
-                </ul>
-              </li>
-            </ul>  
-
-            <li class="m-search">
-              <a href="#" style="cursor:pointer;pointer-events: auto;"><span style="font-size:10px;opacity: 0.5;">Поиск</span> <i class="fa fa-search"></i></a>
-              <div class="form">
-                          
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</div>
-<? if($APPLICATION->GetCurDir() != '/' && $APPLICATION->GetCurDir() != '/o-kompanii/nashi-lica/'): ?>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-      <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "main", Array(
-          "START_FROM" => "0", 
-          "PATH" => "", 
-          "SITE_ID" => "s1" 
-        )
-      );?>
-<? elseif($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
-  <section>
-    <div class="container contentblock">
-      <div class="row">
-        <div class="col-md-12">
-        <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "main", Array(
-            "START_FROM" => "0", 
-            "PATH" => "", 
-            "SITE_ID" => "s1" 
-          )
-        );?>
+<?$APPLICATION->IncludeComponent("bitrix:menu","main_menu",Array(
+    "ROOT_MENU_TYPE" => "main", 
+    "MAX_LEVEL" => "2", 
+    "CHILD_MENU_TYPE" => "submain", 
+    "USE_EXT" => "Y",
+    "DELAY" => "N",
+    "ALLOW_MULTI_SELECT" => "Y",
+    "MENU_CACHE_TYPE" => "N", 
+    "MENU_CACHE_TIME" => "3600", 
+    "MENU_CACHE_USE_GROUPS" => "Y", 
+    "MENU_CACHE_GET_VARS" => "" 
+  )
+);?>
+<? $arrTemltateDefault = ['/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/', ]?>
+<? if($APPLICATION->GetCurDir() != '/'): ?>
+  <? if($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
+    <section>
+      <div class="container contentblock">
+        <div class="row">
+          <div class="col-md-12">
+          <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "main", Array(
+              "START_FROM" => "0", 
+              "PATH" => "", 
+              "SITE_ID" => "s1" 
+            )
+          );?>
+  <? else: ?>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+          <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "main", Array(
+              "START_FROM" => "0", 
+              "PATH" => "", 
+              "SITE_ID" => "s1" 
+            )
+          );?>
+  <? endif; ?>
 <? endif; ?>

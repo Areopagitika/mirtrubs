@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'TRY Clother';
+	src: url('try_clother.eot'); /* IE 9 Compatibility Mode */
+	src: url('try_clother.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('try_clother.woff2') format('woff2'), /* Super Modern Browsers */
+		url('try_clother.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('try_clother.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('try_clother.svg#try_clother') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    font-family: 'TRY Clother';
+}

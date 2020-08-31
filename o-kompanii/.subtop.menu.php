@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"История компании", 
+		"/o-kompanii/istoriya-kompanii/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Производство", 
+		"/o-kompanii/proizvodstvo/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Наш коллектив", 
+		"/o-kompanii/nashi-lica/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Фотогалерея", 
+		"/o-kompanii/foto/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Дипломы и благодарности", 
+		"/o-kompanii/diplomi-blagodarnosti/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Документация", 
+		"/o-kompanii/sertifikaty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"ГОСТы", 
+		"/o-kompanii/sertifikaty/gostyi/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Каталоги труб", 
+		"/o-kompanii/sertifikaty/katalogi-trub/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/o-kompanii/otzivi/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

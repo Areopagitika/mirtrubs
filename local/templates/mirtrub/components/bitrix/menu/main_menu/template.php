@@ -5,6 +5,7 @@
         <div class="row">
             <div class="col">
                 <nav class="menu" id="menu">
+                <? logger($arResult); ?>
                     <?if (!empty($arResult)):?>
                         <ul>
                             <li>

@@ -187,9 +187,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "MENU_CACHE_GET_VARS" => "" 
   )
 );?>
-<? $arrTemltateDefault = ['/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/', ]?>
+<? $arrTemltateDefault = ['/', '/o-kompanii/nashi-lica/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/']?>
 <? if($APPLICATION->GetCurDir() != '/'): ?>
-  <? if($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
+  <? if(in_array($APPLICATION->GetCurDir(), $arrTemltateDefault)): ?>
     <section>
       <div class="container contentblock">
         <div class="row">

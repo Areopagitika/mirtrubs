@@ -139,11 +139,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="col-6 col-md-3 text-right">  
         <span style="border-bottom: dotted 2px;font-size: 12px;">
-          ПОЛУЧИТЬ&nbsp;ЦЕНУ&nbsp;В&nbsp;WATSAPP&nbsp;<i class="fa fa-whatsapp" aria-hidden="true"></i>
+          ПОЛУЧИТЬ ЦЕНУ В WATSAPP <i class="fa fa-whatsapp" aria-hidden="true"></i>
         </span>
         <br/>
         <span class="m-search" style="border-bottom: dotted 2px; cursor:pointer;font-size: 12px;">
-          БЫСТРЫЙ&nbsp;ПОИСК&nbsp;ТРУБЫ&nbsp;<i class="fa fa-search"></i>
+          БЫСТРЫЙ ПОИСК ТРУБЫ <i class="fa fa-search"></i>
         </span>
       </div>
     </div>
@@ -163,12 +163,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="col-6 col-sm-6 mt-1 text-center">
         <span style="border-bottom: dotted 2px;font-size: 11px;">
-          НАПИСАТЬ&nbsp;НАМ&nbsp;В&nbsp;WATSAPP&nbsp;<i class="fa fa-whatsapp" aria-hidden="true"></i>
+          НАПИСАТЬ НАМ В WATSAPP <i class="fa fa-whatsapp" aria-hidden="true"></i>
         </span>
       </div>
       <div class="col-6 col-sm-6 mt-1 text-center">
         <span class="m-search" style="border-bottom: dotted 2px; cursor:pointer;font-size: 11px;">
-          БЫСТРЫЙ&nbsp;ПОИСК&nbsp;ТРУБЫ&nbsp;<i class="fa fa-search"></i>
+          БЫСТРЫЙ ПОИСК ТРУБЫ <i class="fa fa-search"></i>
         </span>
       </div>
     </div>    

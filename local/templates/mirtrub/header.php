@@ -42,6 +42,7 @@
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/owl.carousel.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/lazysizes.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery.fancybox.min.js");
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/libs/fotorama/fotorama.js");
 
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/bootstrap.min.css"); 
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/style.css");
@@ -51,6 +52,7 @@
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/animate.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/owl.carousel.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/jquery.fancybox.min.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/libs/fotorama/fotorama.css");
   ?>
   
   <!-- Google Tag Manager -->
@@ -189,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 );?>
 <? $arrTemltateDefault = ['/', '/o-kompanii/nashi-lica/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/']?>
 <? if($APPLICATION->GetCurDir() != '/'): ?>
-  <? if(in_array($APPLICATION->GetCurDir(), $arrTemltateDefault)): ?>
+  <? if(in_array($APPLICATION->GetCurDir(), $arrTemltateDefault) || preg_match('#/polietilenovie-trubi/*#', $APPLICATION->GetCurDir())): ?>
     <section>
       <div class="container contentblock">
         <div class="row">

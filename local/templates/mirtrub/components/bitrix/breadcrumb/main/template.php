@@ -10,10 +10,10 @@ global $APPLICATION;
 //delayed function must return a string
 if(empty($arResult))
 	return "";
-
+    
 $strReturn = '';
 
-$strReturn .= '<ul itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">';
+$strReturn .= '<div id="navigation"><ul itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">';
 
 $itemSize = count($arResult);
 for($index = 0; $index < $itemSize; $index++)
@@ -47,6 +47,6 @@ for($index = 0; $index < $itemSize; $index++)
 	}
 }
 
-$strReturn .= '</ul>';
+$strReturn .= '</ul></div>';
 
 return $strReturn;

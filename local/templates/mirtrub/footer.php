@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 
 <? if($APPLICATION->GetCurDir() != '/'): ?>
-  <? if($APPLICATION->GetCurDir() === '/o-kompanii/nashi-lica/'): ?>
+  <? if(in_array($APPLICATION->GetCurDir(), $arrTemltateDefault) || preg_match('#\/polietilenovie-trubi\/*#', $APPLICATION->GetCurDir()) || preg_match('#\/trubyi-mirtekt\/*#', $APPLICATION->GetCurDir()) || preg_match('#\/fitingi/fitingi-elektrosvarnyie\/*#', $APPLICATION->GetCurDir())): ?>
           </div>
         </div>
       </div>

@@ -3,13 +3,15 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Трубы с защитой");
 ?>
 
+<?=getIblockID("products", "trubi")?>
+
 <?$APPLICATION->IncludeComponent(
     "bitrix:catalog",
     "products",
-Array(
+    Array(
         "TEMPLATE_THEME" => "blue",
         "IBLOCK_TYPE" => "products",
-        "IBLOCK_ID" => "2",
+        "IBLOCK_ID" => getIblockID("products", "tubing"),
         "HIDE_NOT_AVAILABLE" => "N",
         "BASKET_URL" => "/personal/cart/",
         "ACTION_VARIABLE" => "action",
@@ -35,7 +37,7 @@ Array(
         "SET_LAST_MODIFIED" => "N",
         "SET_TITLE" => "Y",
         "ADD_SECTIONS_CHAIN" => "Y",
-        "ADD_ELEMENT_CHAIN" => "N",
+        "ADD_ELEMENT_CHAIN" => "Y",
         "USE_ELEMENT_COUNTER" => "Y",
         "USE_SALE_BESTSELLERS" => "Y",
         "COMPARE_POSITION_FIXED" => "Y",
@@ -107,12 +109,7 @@ Array(
         "ELEMENT_SORT_ORDER" => "asc",
         "ELEMENT_SORT_FIELD2" => "id",
         "ELEMENT_SORT_ORDER2" => "desc",
-        "LIST_PROPERTY_CODE" => array(
-            0 => "NEWPRODUCT",
-            1 => "SALELEADER",
-            2 => "SPECIALOFFER",
-            3 => "",
-        ),
+        "LIST_PROPERTY_CODE" => array("IN_PRODUCTION", "IMAGES", "LONGTITLE", "TITLE", "DESCRIPTION", "KEYWORDS", "DIAMETER", "SDR", "PRESS", "WEIGHT", "LENGTH", "THICKNESS", "PRICE", "PRICE_OLD"),
         "INCLUDE_SUBSECTIONS" => "Y",
         "LIST_META_KEYWORDS" => "UF_KEYWORDS",
         "LIST_META_DESCRIPTION" => "UF_META_DESCRIPTION",
@@ -136,12 +133,7 @@ Array(
         "DETAIL_DETAIL_PICTURE_MODE" => "IMG",
         "DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
         "DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
-        "DETAIL_PROPERTY_CODE" => array(
-            0 => "NEWPRODUCT",
-            1 => "MANUFACTURER",
-            2 => "MATERIAL",
-            3 => "",
-        ),
+        "DETAIL_PROPERTY_CODE" => array("IN_PRODUCTION", "IMAGES", "LONGTITLE", "TITLE", "DESCRIPTION", "KEYWORDS", "DIAMETER", "SDR", "PRESS", "WEIGHT", "LENGTH", "THICKNESS", "PRICE", "PRICE_OLD"),
         "DETAIL_META_KEYWORDS" => "KEYWORDS",
         "DETAIL_META_DESCRIPTION" => "META_DESCRIPTION",
         "DETAIL_BROWSER_TITLE" => "TITLE",

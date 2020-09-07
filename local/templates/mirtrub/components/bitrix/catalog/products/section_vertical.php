@@ -59,6 +59,8 @@ else
     <? endif; ?>        
 </div>
 
+<? logger(count($arResult)); ?>
+
 <div class="col-md-9">
     <? $intSectionID = $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",

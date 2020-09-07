@@ -56,12 +56,20 @@ $arUrlRewrite=array (
     'PATH' => '/vakansii/index.php',
     'SORT' => 100,
   ),
+  // 10 => 
+  // array (
+  //   'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\w,-]+)/([^/]*)#',
+  //   'RULE' => 'SECTION_CODE=$1',
+  //   'ID' => 'bitrix:catalog.section',
+  //   'PATH' => '/index.php',
+  //   'SORT' => 100,
+  // ),
   10 => 
   array (
-    'CONDITION' => '#^/fitingi/#',
-    'RULE' => '',
-    'ID' => 'bitrix:catalog',
-    'PATH' => '/fitingi/index.php',
+    'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\w,-]+)/([^/]*)#',
+    'RULE' => 'ELEMENT_CODE=$1',
+    'ID' => 'bitrix:catalog.element',
+    'PATH' => '/fitingi/fitingi-elektrosvarnyie/detail.php',
     'SORT' => 100,
   ),
   2 => 
@@ -70,6 +78,14 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/news/index.php',
+    'SORT' => 100,
+  ),
+  11 => 
+  array (
+    'CONDITION' => '#^/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/fitingi/fitingi-elektrosvarnyie/index.php',
     'SORT' => 100,
   ),
 );

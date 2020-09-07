@@ -118,3 +118,6 @@ $this->setFrameMode(true);
 <? if(!empty($arResult["SECTION_DATA"]["DESCRIPTION"])): ?>
     <?=$arResult["SECTION_DATA"]["DESCRIPTION"]?>
 <? endif; ?>
+
+<? logger($arResult["SECTION_DATA"]) ?>
+<? logger("Test Message") ?>

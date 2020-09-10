@@ -8,6 +8,7 @@ function logger( $data ){
 
 Bitrix\Main\Loader::registerAutoLoadClasses(null, array(
     '\Local\City' => '/local/include/classes/City.php',
+    '\Local\FormHelper' => '/local/include/classes/FormHelper.php',
 ));
 
 function getIblockID($type, $code) {

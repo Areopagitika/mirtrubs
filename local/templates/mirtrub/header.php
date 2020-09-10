@@ -5,6 +5,7 @@
   \CJSCore::Init();
   $arSite = \Bitrix\Main\SiteTable::getById(SITE_ID)->fetch();
   $arCity = \Local\City::getItem();
+  \Local\FormHelper::sanitize_fields(array("name"=> "post"));
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +43,8 @@
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/owl.carousel.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/lazysizes.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/jquery.fancybox.min.js");
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/libs/jquery-validation-master/jquery.validate.min.js");
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/ajax.forms.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/libs/fotorama/fotorama.js");
 
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/bootstrap.min.css"); 
@@ -54,6 +57,8 @@
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/jquery.fancybox.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/libs/fotorama/fotorama.css");
   ?>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Le2DcoZAAAAAAVSAe0RKtZTAx2PJ9Iq_k2oJhIC"></script>
   
   <!-- Google Tag Manager -->
   <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

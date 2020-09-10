@@ -27,7 +27,7 @@ else
         <?
         $APPLICATION->IncludeComponent(
             "bitrix:catalog.smart.filter",
-            "bootstrap_v4",
+            "visual_vertical",
             array(
                 "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
                 "IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -58,8 +58,6 @@ else
         ?>
     <? endif; ?>        
 </div>
-
-<? logger(count($arResult)); ?>
 
 <div class="col-md-9">
     <? $intSectionID = $APPLICATION->IncludeComponent(

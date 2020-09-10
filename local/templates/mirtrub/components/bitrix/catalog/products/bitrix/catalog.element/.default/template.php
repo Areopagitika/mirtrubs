@@ -158,7 +158,7 @@ $this->setFrameMode(true);
 								<a class="btn-tovar" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
 							<? endif;*/ ?>
 
-                            <a class="btn-tovar mt-3" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Запросить цену</a>
+                            <a class="btn-tovar mt-3" href="#product" data-toggle="modal" data-target=".order" data-product='<? echo $arResult["PROPERTIES"]["LONGTITLE"]["VALUE"] ?: $arResult["NAME"] ?>' onclick="yaCounter25615220.reachGoal('open-form'); return true;">Запросить цену</a>
 
                             <div class="product-truck">
                                 <icon class="icon-truck"></icon>
@@ -168,7 +168,7 @@ $this->setFrameMode(true);
                         <br/>
                         <div class="product-action" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             
-                            <a class="btn-tovar mt-3" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Забронировать цену</a>
+                            <a class="btn-tovar mt-3" href="#product" data-toggle="modal" data-target=".order" data-product='<? echo $arResult["PROPERTIES"]["LONGTITLE"]["VALUE"] ?: $arResult["NAME"] ?>' onclick="yaCounter25615220.reachGoal('open-form'); return true;">Забронировать цену</a>
 
                             <div class="product-truck">
                                 <icon class="icon-truck" style="background:none;"></icon>

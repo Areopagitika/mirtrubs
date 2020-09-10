@@ -10,7 +10,156 @@ $APPLICATION->SetTitle("Главная");
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/fitingi-segmentnie.png" loading="lazy" alt="">
+							<div class="slider-title">
+								Новый цех сварных фитингов
+							</div>
+							<div class="slider-text">
+								<div>Открыт новых цех по производству сварных фитингов.</div>
+								<div>Принимаем заявки!</div>
+							</div>
+							<a class="btn-slider" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Оставить заявку</a>
+						</div>
+						
+						<div class="carousel-item">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/pe-truba-710.png" loading="lazy" alt="">
+							<div class="slider-title">
+								Производство ПЭ трубы 710 диаметра
+							</div>
+							<div class="slider-text">
+								<div>Мы запустили в производство полиэтиленовую трубу 710 диаметра.</div>
+								<div>Принимаем заявки!</div>
+							</div>
+							<a class="btn-slider" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Оставить заявку</a>
+						</div>
+						
+						<div class="carousel-item">
+							
+							<picture>
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-1.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-1.png" loading="lazy" alt="">
+							</picture>
+							<!--
+							<img class="lazyload" data-src="assets/uploads/slider/map-russia.png" loading="lazy" alt="">
+							-->
+							<div class="slider-title">
+								Отгрузка с заводов:
+							</div>
+							<div class="slider-text">
+								<div><span></span> Казань</div>
+								<div><span></span> Большой сундырь (Чебоксары)</div>
+								<div><span></span> Балашов (Саратовская область)</div>
+							</div>
+							<a class="btn-slider" href="/zavodyi/">Подробнее</a>
+						</div>
+						
+						<div class="carousel-item">
+							<picture>
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi.png" loading="lazy" alt="">
+							</picture>
+							<!--
+							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi.png" loading="lazy" alt="">
+							-->
+							<div class="slider-title">
+								Полиэтиленовые трубы
+							</div>
+							<div class="slider-text">
+								<div><span></span> Трубы для воды</div>
+								<div><span></span> Трубы для газа</div>
+								<div><span></span> Трубы для канализации</div>
+							</div>
+							<a class="btn-slider" href="/polietilenovie-trubi/">Открыть</a>
+						</div>
+						
+						<div class="carousel-item">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-vodi.png" loading="lazy" alt="">
+							<div class="slider-title">
+								ПНД трубы для воды
+							</div>
+							<div class="slider-text">
+								<div><span></span> Диаметр: Ø D20 - D1200</div>
+								<div><span></span> SDR: 7,4 - 33</div>
+								<div><span></span> ГОСТ: 18599-2003</div>
+							</div>
+							<a class="btn-slider" href="/polietilenovie-trubi/trubi-dlya-vodosnabjeniya/">Выбрать трубы</a>
+						</div>
+						
+						<div class="carousel-item">
+							<picture>
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-1.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-1.png" loading="lazy" alt="">
+							</picture>
+							<!--
+							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-dlya-gaza.png" loading="lazy" alt="">
+							-->
+							<div class="slider-title">
+								ПНД трубы для газа
+							</div>
+							<div class="slider-text">
+								<div><span></span> Диаметр: Ø D32 - D560</div>
+								<div><span></span> SDR: 7,4 - 17,5</div>
+								<div><span></span> ГОСТ: Р50838-2009</div>
+							</div>
+							<a class="btn-slider" href="/polietilenovie-trubi/trubi-dlya-gazoprovodov/">Выбрать трубы</a>
+						</div>
+						
+						<div class="carousel-item">
+							<picture>
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-tehnicheskie-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-tehnicheskie-sm.png">
+								<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-tehnicheskie-1.png" loading="lazy" alt="">
+							</picture>
+							<!--
+							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-tehnicheskie.png" loading="lazy" alt="">
+							-->
+							<div class="slider-title">
+								ПНД трубы для канализации
+							</div>
+							<div class="slider-text">
+								<div><span></span> Диаметр: Ø D32 - D160</div>
+								<div><span></span> ГОСТ: 22689.0-89</div>
+							</div>
+							<a class="btn-slider" href="/polietilenovie-trubi/trubyi-dlya-kanalizaczii/">Выбрать трубы</a>
+						</div>
+						
+						<div class="carousel-item">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/mirtekt.png" loading="lazy" alt="">
+							<div class="slider-title">
+								Трубы в защитной оболочке (МИРТЕКТ)
+							</div>
+							<div class="slider-text">
+								<div><span></span> Трубы для воды</div>
+								<div><span></span> Трубы для газа</div>
+							</div>
+							<a class="btn-slider" href="/trubyi-mirtekt/">Выбрать трубы</a>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -19,31 +168,31 @@ $APPLICATION->SetTitle("Главная");
 	<div class="container">
 		<div class="row">
 			<div class="col-6 col-md-6 col-lg-3 text-center">
-				<a href="[[~5]]" class="catblock ">
+				<a href="/polietilenovie-trubi/" class="catblock ">
 					<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/products_vod.jpg" loading="lazy" alt="">
 					<div class="catzag">Полиэтиленовые<br/>трубы</div>
 				</a>
 			</div>
 			<div class="col-6 col-md-6 col-lg-3 text-center">
-				<a href="[[~889]]" class="catblock">
+				<a href="/trubyi-mirtekt/" class="catblock">
 					<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/products_vod_z.jpg" loading="lazy" alt="">
 					<div class="catzag">Трубы<br/>с защитой</div>
 				</a>
 			</div>
 			<div class="col-6 col-md-6 col-lg-3 text-center">
-				<a href="[[~27]]" class="catblock ">
+				<a href="/fitingi/" class="catblock ">
 					<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/products_fit.jpg" loading="lazy" alt="">
 					<div class="catzag">Фитинги<br/>для труб</div>
 				</a>
 			</div>
 			<div class="col-6 col-md-6 col-lg-3 text-center">
-				<a href="[[~29]]" class="catblock ">
+				<a href="/svarochnoe-oborudovanie/" class="catblock ">
 					<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/products_obor.jpg" loading="lazy" alt="">
 					<div class="catzag">Сварочное<br/>оборудование</div>
 				</a>
 			</div>
 			<div class="col-6 col-md-6 col-lg-3 text-center">
-				<a href="[[~2444]]" class="catblock ">
+				<a href="/svarochnoe-oborudovanie/" class="catblock ">
 					<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/products_flanc.jpg" loading="lazy" alt="">
 					<div class="catzag">Офланцованные<br/>изделия</div>
 				</a>
@@ -57,17 +206,17 @@ $APPLICATION->SetTitle("Главная");
 		<div class="row">
 			<div class="col-sm-12 col-md-4">
 				<h3>ТОП продаж</h3>
-				<a href="[[~1634]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 160 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1659]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 63 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1667]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 225 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1670]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 315 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-11-d-400/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 160 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-17-d-63/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 63 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-17-d-225/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 225 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-17-d-315/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 17 D 315 <i class="fa fa-long-arrow-right"></i></a>
 			</div>
 			<div class="col-sm-12 col-md-4">
 				<h3>&nbsp;</h3>
-				<a href="[[~1622]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 90 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1620]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 63 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1626]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 160 <i class="fa fa-long-arrow-right"></i></a>
-				<a href="[[~1645]]" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 13.6 D 160 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-11-d-90/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 90 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-11-d-63/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 63 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-11-d-160/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 11 D 160 <i class="fa fa-long-arrow-right"></i></a>
+				<a href="/trubyi-mirtekt/trubyi-v-zashhitnoj-obolochke-dlya-gaza/pe-100-sdr-13,6-d-160/" class="toplink p-2 mb-1 pl-4">Труба ПНД ПЭ 100 SDR 13.6 D 160 <i class="fa fa-long-arrow-right"></i></a>
 			</div>
 			<div class="col-md-4">
 				<h3 class="text-center d-none d-md-block">Знаки качества</h3>
@@ -81,7 +230,7 @@ $APPLICATION->SetTitle("Главная");
 		<div class="row">
 			<div class="col-md-4">
 				<div class="category-trub">
-					<a class="water" href="[[~22]]">Трубы для воды</a>
+					<a class="water" href="/polietilenovie-trubi/trubi-dlya-vodosnabjeniya/">Трубы для воды</a>
 					<div class="truba">От Ø32 до Ø90 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">От Ø110 до Ø140 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">От Ø160 до Ø280 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
@@ -91,7 +240,7 @@ $APPLICATION->SetTitle("Главная");
 			</div>
 			<div class="col-md-4">
 				<div class="category-trub">
-					<a class="gas" href="[[~23]]">Трубы для газа</a>
+					<a class="gas" href="/polietilenovie-trubi/trubi-dlya-gazoprovodov/">Трубы для газа</a>
 					<div class="truba">От Ø32 до Ø90 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">От Ø110 до Ø140 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">От Ø160 до Ø280 <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
@@ -101,7 +250,7 @@ $APPLICATION->SetTitle("Главная");
 			</div>
 			<div class="col-md-4">
 				<div class="category-trub">
-					<a class="drain" href="[[~24]]">Трубы для канализации</a>
+					<a class="drain" href="/polietilenovie-trubi/trubyi-dlya-kanalizaczii/">Трубы для канализации</a>
 					<div class="truba">Труба Ø50 (L-3) <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">Труба Ø110 (L-0,25) <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
 					<div class="truba">Труба Ø110 (L-3) <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">Заказать трубу</a></div>
@@ -245,81 +394,204 @@ $APPLICATION->SetTitle("Главная");
 				<div class="news">
 					<div class="news-title"><a href="[[~6]]">Новости</a></div>
 					<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"news_main", 
-	array(
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_NAME" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"AJAX_MODE" => "N",
-		"IBLOCK_TYPE" => "news",
-		"IBLOCK_ID" => getIblockID("news", "news"),
-		"NEWS_COUNT" => "5",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_ORDER1" => "DESC",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER2" => "ASC",
-		"FILTER_NAME" => "",
-		"FIELD_CODE" => array(
-			0 => "ID",
-			1 => "",
-		),
-		"PROPERTY_CODE" => array(
-			0 => "DESCRIPTION",
-			1 => "",
-		),
-		"CHECK_DATES" => "Y",
-		"DETAIL_URL" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"SET_TITLE" => "Y",
-		"SET_BROWSER_TITLE" => "Y",
-		"SET_META_KEYWORDS" => "Y",
-		"SET_META_DESCRIPTION" => "Y",
-		"SET_LAST_MODIFIED" => "Y",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"INCLUDE_SUBSECTIONS" => "Y",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "3600",
-		"CACHE_FILTER" => "Y",
-		"CACHE_GROUPS" => "Y",
-		"DISPLAY_TOP_PAGER" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "Новости",
-		"PAGER_SHOW_ALWAYS" => "Y",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_DESC_NUMBERING" => "Y",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "Y",
-		"PAGER_BASE_LINK_ENABLE" => "Y",
-		"SET_STATUS_404" => "Y",
-		"SHOW_404" => "Y",
-		"MESSAGE_404" => "",
-		"PAGER_BASE_LINK" => "",
-		"PAGER_PARAMS_NAME" => "arrPager",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "news_main",
-		"STRICT_SECTION_CHECK" => "N",
-		"FILE_404" => ""
-	),
-	false
-);?>                 
+						"bitrix:news.list", 
+						"news_main", 
+						array(
+							"DISPLAY_DATE" => "Y",
+							"DISPLAY_NAME" => "Y",
+							"DISPLAY_PICTURE" => "Y",
+							"DISPLAY_PREVIEW_TEXT" => "Y",
+							"AJAX_MODE" => "N",
+							"IBLOCK_TYPE" => "news",
+							"IBLOCK_ID" => getIblockID("news", "news"),
+							"NEWS_COUNT" => "5",
+							"SORT_BY1" => "ACTIVE_FROM",
+							"SORT_ORDER1" => "DESC",
+							"SORT_BY2" => "SORT",
+							"SORT_ORDER2" => "ASC",
+							"FILTER_NAME" => "",
+							"FIELD_CODE" => array(
+								0 => "ID",
+								1 => "",
+							),
+							"PROPERTY_CODE" => array(
+								0 => "DESCRIPTION",
+								1 => "",
+							),
+							"CHECK_DATES" => "Y",
+							"DETAIL_URL" => "",
+							"PREVIEW_TRUNCATE_LEN" => "",
+							"ACTIVE_DATE_FORMAT" => "d.m.Y",
+							"SET_TITLE" => "Y",
+							"SET_BROWSER_TITLE" => "Y",
+							"SET_META_KEYWORDS" => "Y",
+							"SET_META_DESCRIPTION" => "Y",
+							"SET_LAST_MODIFIED" => "Y",
+							"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+							"ADD_SECTIONS_CHAIN" => "Y",
+							"HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+							"PARENT_SECTION" => "",
+							"PARENT_SECTION_CODE" => "",
+							"INCLUDE_SUBSECTIONS" => "Y",
+							"CACHE_TYPE" => "A",
+							"CACHE_TIME" => "3600",
+							"CACHE_FILTER" => "Y",
+							"CACHE_GROUPS" => "Y",
+							"DISPLAY_TOP_PAGER" => "N",
+							"DISPLAY_BOTTOM_PAGER" => "N",
+							"PAGER_TITLE" => "Новости",
+							"PAGER_SHOW_ALWAYS" => "Y",
+							"PAGER_TEMPLATE" => "",
+							"PAGER_DESC_NUMBERING" => "Y",
+							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+							"PAGER_SHOW_ALL" => "Y",
+							"PAGER_BASE_LINK_ENABLE" => "Y",
+							"SET_STATUS_404" => "Y",
+							"SHOW_404" => "Y",
+							"MESSAGE_404" => "",
+							"PAGER_BASE_LINK" => "",
+							"PAGER_PARAMS_NAME" => "arrPager",
+							"AJAX_OPTION_JUMP" => "N",
+							"AJAX_OPTION_STYLE" => "Y",
+							"AJAX_OPTION_HISTORY" => "N",
+							"AJAX_OPTION_ADDITIONAL" => "",
+							"COMPONENT_TEMPLATE" => "news_main",
+							"STRICT_SECTION_CHECK" => "N",
+							"FILE_404" => ""
+						),
+						false
+					);?>                 
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="proizvodstvo">
 					<div class="title">Сегодня в производстве - <?=date("d.m.Y"); ?></div>
-					<table>
-
-					</table>
+					<?
+						global $arrFavoriteFilter;
+						$arrFavoriteFilter = array("PROPERTY_IN_PRODUCTION" => 1)
+					?>
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:catalog.section",
+						"products.in_production",
+						Array(
+							"ACTION_VARIABLE" => "action",
+							"ADD_PICT_PROP" => "MORE_PHOTO",
+							"ADD_PROPERTIES_TO_BASKET" => "Y",
+							"ADD_SECTIONS_CHAIN" => "N",
+							"ADD_TO_BASKET_ACTION" => "ADD",
+							"AJAX_MODE" => "N",
+							"AJAX_OPTION_ADDITIONAL" => "",
+							"AJAX_OPTION_HISTORY" => "N",
+							"AJAX_OPTION_JUMP" => "N",
+							"AJAX_OPTION_STYLE" => "Y",
+							"BACKGROUND_IMAGE" => "UF_BACKGROUND_IMAGE",
+							"BASKET_URL" => "/personal/basket.php",
+							"BRAND_PROPERTY" => "BRAND_REF",
+							"BROWSER_TITLE" => "-",
+							"CACHE_FILTER" => "N",
+							"CACHE_GROUPS" => "Y",
+							"CACHE_TIME" => "36000000",
+							"CACHE_TYPE" => "A",
+							"COMPATIBLE_MODE" => "Y",
+							"CONVERT_CURRENCY" => "Y",
+							"CURRENCY_ID" => "RUB",
+							"CUSTOM_FILTER" => "",
+							"DATA_LAYER_NAME" => "dataLayer",
+							"DETAIL_URL" => "",
+							"DISABLE_INIT_JS_IN_COMPONENT" => "N",
+							"DISCOUNT_PERCENT_POSITION" => "bottom-right",
+							"DISPLAY_BOTTOM_PAGER" => "Y",
+							"DISPLAY_TOP_PAGER" => "N",
+							"ELEMENT_SORT_FIELD" => "sort",
+							"ELEMENT_SORT_FIELD2" => "id",
+							"ELEMENT_SORT_ORDER" => "asc",
+							"ELEMENT_SORT_ORDER2" => "desc",
+							"ENLARGE_PRODUCT" => "PROP",
+							"ENLARGE_PROP" => "NEWPRODUCT",
+							"FILTER_NAME" => "arrFavoriteFilter",
+							"HIDE_NOT_AVAILABLE" => "N",
+							"HIDE_NOT_AVAILABLE_OFFERS" => "N",
+							"IBLOCK_ID" => getIblockID("products", "tubing"),
+							"IBLOCK_TYPE" => "products",
+							"INCLUDE_SUBSECTIONS" => "Y",
+							"LABEL_PROP" => array("NEWPRODUCT"),
+							"LABEL_PROP_MOBILE" => array(),
+							"LABEL_PROP_POSITION" => "top-left",
+							"LAZY_LOAD" => "Y",
+							"LINE_ELEMENT_COUNT" => "3",
+							"LOAD_ON_SCROLL" => "N",
+							"MESSAGE_404" => "",
+							"MESS_BTN_ADD_TO_BASKET" => "В корзину",
+							"MESS_BTN_BUY" => "Купить",
+							"MESS_BTN_DETAIL" => "Подробнее",
+							"MESS_BTN_LAZY_LOAD" => "Показать ещё",
+							"MESS_BTN_SUBSCRIBE" => "Подписаться",
+							"MESS_NOT_AVAILABLE" => "Нет в наличии",
+							"META_DESCRIPTION" => "-",
+							"META_KEYWORDS" => "-",
+							"OFFERS_CART_PROPERTIES" => array("ARTNUMBER","COLOR_REF","SIZES_SHOES","SIZES_CLOTHES"),
+							"OFFERS_FIELD_CODE" => array("",""),
+							"OFFERS_LIMIT" => "5",
+							"OFFERS_PROPERTY_CODE" => array("COLOR_REF","SIZES_SHOES","SIZES_CLOTHES",""),
+							"OFFERS_SORT_FIELD" => "sort",
+							"OFFERS_SORT_FIELD2" => "id",
+							"OFFERS_SORT_ORDER" => "asc",
+							"OFFERS_SORT_ORDER2" => "desc",
+							"OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+							"OFFER_TREE_PROPS" => array("COLOR_REF","SIZES_SHOES","SIZES_CLOTHES"),
+							"PAGER_BASE_LINK_ENABLE" => "N",
+							"PAGER_DESC_NUMBERING" => "N",
+							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+							"PAGER_SHOW_ALL" => "N",
+							"PAGER_SHOW_ALWAYS" => "N",
+							"PAGER_TEMPLATE" => ".default",
+							"PAGER_TITLE" => "Товары",
+							"PAGE_ELEMENT_COUNT" => "6",
+							"PARTIAL_PRODUCT_PROPERTIES" => "N",
+							"PRICE_CODE" => array("BASE"),
+							"PRICE_VAT_INCLUDE" => "Y",
+							"PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons,compare",
+							"PRODUCT_DISPLAY_MODE" => "Y",
+							"PRODUCT_ID_VARIABLE" => "id",
+							"PRODUCT_PROPERTIES" => array("NEWPRODUCT","MATERIAL"),
+							"PRODUCT_PROPS_VARIABLE" => "prop",
+							"PRODUCT_QUANTITY_VARIABLE" => "",
+							"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':true}]",
+							"PRODUCT_SUBSCRIPTION" => "Y",
+							"PROPERTY_CODE" => array("DIAMETER", "MARKA", "SDR"),
+							"PROPERTY_CODE_MOBILE" => array(),
+							"RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
+							"RCM_TYPE" => "personal",
+							"SECTION_CODE" => "",
+							"SECTION_ID" => "",
+							"SECTION_ID_VARIABLE" => "SECTION_ID",
+							"SECTION_URL" => "",
+							"SECTION_USER_FIELDS" => array("",""),
+							"SEF_MODE" => "N",
+							"SET_BROWSER_TITLE" => "Y",
+							"SET_LAST_MODIFIED" => "N",
+							"SET_META_DESCRIPTION" => "Y",
+							"SET_META_KEYWORDS" => "Y",
+							"SET_STATUS_404" => "N",
+							"SET_TITLE" => "Y",
+							"SHOW_404" => "N",
+							"SHOW_ALL_WO_SECTION" => "N",
+							"SHOW_CLOSE_POPUP" => "N",
+							"SHOW_DISCOUNT_PERCENT" => "Y",
+							"SHOW_FROM_SECTION" => "N",
+							"SHOW_MAX_QUANTITY" => "N",
+							"SHOW_OLD_PRICE" => "N",
+							"SHOW_PRICE_COUNT" => "1",
+							"SHOW_SLIDER" => "Y",
+							"SLIDER_INTERVAL" => "3000",
+							"SLIDER_PROGRESS" => "N",
+							"TEMPLATE_THEME" => "blue",
+							"USE_ENHANCED_ECOMMERCE" => "Y",
+							"USE_MAIN_ELEMENT_SECTION" => "N",
+							"USE_PRICE_COUNT" => "N",
+							"USE_PRODUCT_QUANTITY" => "N"
+						)
+					);?>
 					<div class="text-center">
 						<a class="btn-yellow mb-2 wow shake" href="#online-order" data-toggle="modal" data-target=".online-order" data-wow-delay="2s" onclick="yaCounter25615220.reachGoal('open-form'); return true;"><i class="fa fa-check-circle-o"></i>&nbsp; Оставить заявку</a>
 					</div>

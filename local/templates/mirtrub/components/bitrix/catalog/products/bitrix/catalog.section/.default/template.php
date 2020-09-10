@@ -32,7 +32,7 @@ $this->setFrameMode(true);
     <div id="mse2_selected" style="display: none;"></div>
 </div>
 
-<div class="table table-product">
+<div class="table table-product" id="mse2_mfilter">
     <div class="thead">
         <div class="tr">
             <div class="td">Марка SDR Диаметр</div>
@@ -42,6 +42,7 @@ $this->setFrameMode(true);
             <div class="td">Заказать</div>
         </div>
     </div>
+    <?logger($arResult['ITEMS']); ?>
     <div id="mse2_results" class="tbody">
         <? if (!empty($arResult['ITEMS'])): ?>
             <? foreach ($arResult['ITEMS'] as $key => $arItem): ?>
@@ -59,7 +60,7 @@ $this->setFrameMode(true);
                     </div>
                     <div class="td">
                         <? if(!empty($arItem["PROPERTIES"]["WEIGHT"]["VALUE"])): ?>
-                            <?=$arResult["PROPERTIES"]["WEIGHT"]["VALUE"]; ?>
+                            <?=$arItem["PROPERTIES"]["WEIGHT"]["VALUE"]; ?>
                         <? endif; ?>
                     </div>
                     <div class="td">
@@ -69,7 +70,7 @@ $this->setFrameMode(true);
                     </div>
                     <div class="td">
                         
-                        <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
+                        <a href="#product" data-toggle="modal" data-target=".order" data-product="<?echo $arItem["PROPERTIES"]["LONGTITLE"]["VALUE"] ?: $arItem["NAME"] ?>" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
                         
                         <input type="hidden" name="id" value="290">
                         <input type="hidden" name="count" value="1">
@@ -82,42 +83,33 @@ $this->setFrameMode(true);
     <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
         <? echo $arResult["NAV_STRING"]; ?>
     <? endif; ?>
-
-    <button class="btn btn-default btn_more">Загрузить еще</button>
 </div>          
 
 <ul class="nav menu-trubi">
+    <? foreach($arResult["SECTIONS_DATA"] as $value): ?>
     <li>
-        <a href="polietilenovie-trubi/trubi-dlya-vodosnabjeniya/" title="Полиэтиленовые трубы для воды">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-dlya-vodi.jpg" alt="Полиэтиленовые трубы для водопровода">
-            <span>Трубы для воды</span>
-            <div class="menu-param">Диаметр: Ø D20 - D1200</div>
-            <div class="menu-param">SDR: 7,4 - 33</div>
-            <div class="menu-param">ГОСТ: 18599-2003</div>
+        <a href="<?=$value["SECTION_PAGE_URL"]; ?>" title="">
+            <? if(!empty($value["PICTURE"])): ?>
+                <img src="<?=CFile::GetPath($value["PICTURE"]); ?>" alt="<?=$value["UF_LONGTITLE"]; ?>">
+            <? endif; ?>
+            <span><?=$value["NAME"]; ?></span>
+            <? if(!empty($value["UF_DIAMETER"])): ?>
+                <div class="menu-param">Диаметр: <?=$value["UF_DIAMETER"]; ?></div>
+            <? endif; ?>
+            <? if(!empty($value["UF_SDR"])): ?>
+                <div class="menu-param">SDR: <?=$value["UF_SDR"]; ?></div>
+            <? endif; ?>
+            <? if(!empty($value["UF_GOST"])): ?>
+                <div class="menu-param">ГОСТ: <?=$value["UF_GOST"]; ?></div>
+            <? endif; ?>
         </a>
     </li>
-    <li>
-        <a href="polietilenovie-trubi/trubi-dlya-gazoprovodov/" title="Полиэтиленовые трубы для газа">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-dlya-gaza.jpg" alt="Полиэтиленовые трубы для газопровода">
-            <span>Трубы для газа</span>
-            <div class="menu-param">Диаметр: Ø D32 - D560</div>
-            <div class="menu-param">SDR: 7,4 - 17,5</div>
-            <div class="menu-param">ГОСТ: Р50838-2009</div>
-        </a>
-    </li>
-    <li>
-        <a href="polietilenovie-trubi/trubyi-dlya-kanalizaczii/" title="Полиэтиленовые трубы для канализации">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-tehnicheskie.jpg" alt="Полиэтиленовые трубы технические">
-            <span>Трубы для канализации</span>
-            <div class="menu-param">Диаметр: Ø D30 - D160</div>
-            <div class="menu-param">ГОСТ: 22689.0-89</div>
-        </a>
-    </li>
+    <? endforeach; ?>
 </ul>
 
 <? if(!empty($arResult["SECTION_DATA"]["DESCRIPTION"])): ?>
     <?=$arResult["SECTION_DATA"]["DESCRIPTION"]?>
 <? endif; ?>
 
-<? logger($arResult["SECTION_DATA"]) ?>
+<? logger($arParams) ?>
 <? logger("Test Message") ?>

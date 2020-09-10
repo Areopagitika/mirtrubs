@@ -174,10 +174,10 @@ iframe {
   clip: inherit;
   overflow: inherit;
 }
-.ui-widget-content {
+/*.ui-widget-content {
   overflow: auto;
   max-height: 400px;
-}
+}*/
 #mse2_filters .mse2_number_slider {
   overflow: visible;
 }
@@ -2879,4 +2879,12 @@ form .btns button:hover {
   .proizvodstvo table {
     font-size: 80%;
   }
+}
+#mse2_mfilter .btn_more {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.errors-block .error {
+  color: #ff0000;
 }

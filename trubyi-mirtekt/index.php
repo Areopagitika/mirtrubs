@@ -197,7 +197,7 @@ $APPLICATION->SetTitle("Трубы с защитой");
         "OFFERS_SORT_ORDER" => "asc",
         "OFFERS_SORT_FIELD2" => "id",
         "OFFERS_SORT_ORDER2" => "desc",
-        "PAGER_TEMPLATE" => "arrows",
+        "PAGER_TEMPLATE" => "show_more",
         "DISPLAY_TOP_PAGER" => "N",
         "DISPLAY_BOTTOM_PAGER" => "Y",
         "PAGER_TITLE" => "Товары",

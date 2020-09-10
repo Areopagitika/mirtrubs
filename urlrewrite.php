@@ -1,5 +1,13 @@
 <?php
 $arUrlRewrite=array (
+  10 => 
+  array (
+    'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\\w,-]+)/([^/]*)#',
+    'RULE' => 'ELEMENT_CODE=$1',
+    'ID' => 'bitrix:catalog.element',
+    'PATH' => '/fitingi/fitingi-elektrosvarnyie/detail.php',
+    'SORT' => 100,
+  ),
   7 => 
   array (
     'CONDITION' => '#^/svarochnoe-oborudovanie/#',
@@ -54,22 +62,6 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/vakansii/index.php',
-    'SORT' => 100,
-  ),
-  // 10 => 
-  // array (
-  //   'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\w,-]+)/([^/]*)#',
-  //   'RULE' => 'SECTION_CODE=$1',
-  //   'ID' => 'bitrix:catalog.section',
-  //   'PATH' => '/index.php',
-  //   'SORT' => 100,
-  // ),
-  10 => 
-  array (
-    'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\w,-]+)/([^/]*)#',
-    'RULE' => 'ELEMENT_CODE=$1',
-    'ID' => 'bitrix:catalog.element',
-    'PATH' => '/fitingi/fitingi-elektrosvarnyie/detail.php',
     'SORT' => 100,
   ),
   2 => 

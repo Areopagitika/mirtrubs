@@ -69,7 +69,7 @@ $this->setFrameMode(true);
                     </div>
                     <div class="td">
                         
-                        <a href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
+                        <a href="#product" data-toggle="modal" data-target=".order" data-product="<?echo $arItem["PROPERTIES"]["LONGTITLE"]["VALUE"] ?: $arItem["NAME"] ?>" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
                         
                         <input type="hidden" name="id" value="290">
                         <input type="hidden" name="count" value="1">

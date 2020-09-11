@@ -28,15 +28,15 @@ $APPLICATION->SetTitle("Дипломы и благодарности");
             "CACHE_TIME" => "3600",
             "CACHE_TYPE" => "A",
             "CHECK_DATES" => "Y",
-            "DETAIL_URL" => "",
+            "DETAIL_URL" => "/o-kompanii/foto/#ELEMENT_CODE#/",
             "DISPLAY_BOTTOM_PAGER" => "Y",
             "DISPLAY_DATE" => "Y",
             "DISPLAY_NAME" => "Y",
             "DISPLAY_PICTURE" => "Y",
             "DISPLAY_PREVIEW_TEXT" => "Y",
             "DISPLAY_TOP_PAGER" => "Y",
-            "ELEMENT_CODE" => "",
-            "ELEMENT_ID" => "33",
+            "ELEMENT_CODE" => "diplomi-blagodarnosti",
+            "ELEMENT_ID" => "",
             "FIELD_CODE" => array(
                 0 => "ID",
                 1 => "",
@@ -47,7 +47,7 @@ $APPLICATION->SetTitle("Дипломы и благодарности");
             ),
             "IBLOCK_ID" => getIblockID("photogallery", "photogallery"),
             "IBLOCK_TYPE" => "photogallery",
-            "IBLOCK_URL" => "news.php?ID=#IBLOCK_ID#\"",
+            "IBLOCK_URL" => "",
             "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
             "MESSAGE_404" => "",
             "META_DESCRIPTION" => "-",
@@ -85,6 +85,19 @@ $APPLICATION->SetTitle("Дипломы и благодарности");
             "COMPONENT_TEMPLATE" => "photogallery"
         ),
         false
+    );?>
+    <?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+            "ROOT_MENU_TYPE" => "neighbours", 
+            "MAX_LEVEL" => "1", 
+            "CHILD_MENU_TYPE" => "top", 
+            "USE_EXT" => "Y",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "Y",
+            "MENU_CACHE_TYPE" => "N", 
+            "MENU_CACHE_TIME" => "3600", 
+            "MENU_CACHE_USE_GROUPS" => "Y", 
+            "MENU_CACHE_GET_VARS" => "" 
+        )
     );?>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -84,6 +84,19 @@ $APPLICATION->SetTitle("О компании");
         <p><strong>Телефон: </strong><strong> <a href="tel:88005552829" onclick="ym(25615220, 'reachGoal', 'phone-88005552829'); return true;">8 800 555 28 29</a> (бесплатный)</strong></p>
         <p><strong>Телефон: <a href="tel:+7 (843) 255-31-55" onclick="ym(25615220, 'reachGoal', 'phone-78432553155'); return true;">+7 (843) 255-31-55</a></strong>&nbsp;</p>
     </div>
+    <?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+            "ROOT_MENU_TYPE" => "neighbours", 
+            "MAX_LEVEL" => "1", 
+            "CHILD_MENU_TYPE" => "top", 
+            "USE_EXT" => "Y",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "Y",
+            "MENU_CACHE_TYPE" => "N", 
+            "MENU_CACHE_TIME" => "3600", 
+            "MENU_CACHE_USE_GROUPS" => "Y", 
+            "MENU_CACHE_GET_VARS" => "" 
+        )
+    );?>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

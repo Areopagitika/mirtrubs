@@ -3,9 +3,9 @@
 namespace Sprint\Migration;
 
 
-class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
+class IB_VACANCIES_2020_09_1120200911211200 extends Version
 {
-    protected $description = "IB_VACANCIES_MAIN_2020_08_28";
+    protected $description = "";
 
     protected $moduleVersion = "3.16.3";
 
@@ -17,42 +17,42 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
     {
         $helper = $this->getHelperManager();
         $helper->Iblock()->saveIblockType(array (
-  'ID' => 'news',
-  'SECTIONS' => 'N',
+  'ID' => 'vacancies',
+  'SECTIONS' => 'Y',
   'EDIT_FILE_BEFORE' => NULL,
   'EDIT_FILE_AFTER' => NULL,
-  'IN_RSS' => 'Y',
-  'SORT' => '50',
+  'IN_RSS' => 'N',
+  'SORT' => '150',
   'LANG' => 
   array (
     'ru' => 
     array (
-      'NAME' => 'Новости',
-      'SECTION_NAME' => '',
-      'ELEMENT_NAME' => 'Новости',
+      'NAME' => 'Вакансии',
+      'SECTION_NAME' => 'Разделы',
+      'ELEMENT_NAME' => 'Вакансии',
     ),
     'en' => 
     array (
-      'NAME' => 'News',
-      'SECTION_NAME' => '',
-      'ELEMENT_NAME' => 'News',
+      'NAME' => 'Job',
+      'SECTION_NAME' => 'Categories',
+      'ELEMENT_NAME' => 'Vacancies',
     ),
   ),
 ));
         $iblockId = $helper->Iblock()->saveIblock(array (
-  'IBLOCK_TYPE_ID' => 'news',
+  'IBLOCK_TYPE_ID' => 'vacancies',
   'LID' => 
   array (
     0 => 's1',
   ),
-  'CODE' => 'news',
+  'CODE' => 'vacancies',
   'API_CODE' => NULL,
-  'NAME' => 'Новости',
+  'NAME' => 'Вакансии',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'LIST_PAGE_URL' => '#SITE_DIR#/news/',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/news/#ELEMENT_CODE#/',
-  'SECTION_PAGE_URL' => NULL,
+  'LIST_PAGE_URL' => '#SITE_DIR#/vakansii/',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/vakansii/#ELEMENT_CODE#/',
+  'SECTION_PAGE_URL' => '',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -60,10 +60,10 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   'RSS_TTL' => '24',
   'RSS_ACTIVE' => 'Y',
   'RSS_FILE_ACTIVE' => 'N',
-  'RSS_FILE_LIMIT' => '0',
-  'RSS_FILE_DAYS' => '0',
+  'RSS_FILE_LIMIT' => NULL,
+  'RSS_FILE_DAYS' => NULL,
   'RSS_YANDEX_ACTIVE' => 'N',
-  'XML_ID' => 'furniture_news_s1',
+  'XML_ID' => 'furniture_vacancies_s1',
   'INDEX_ELEMENT' => 'Y',
   'INDEX_SECTION' => 'N',
   'WORKFLOW' => 'N',
@@ -71,8 +71,8 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   'SECTION_CHOOSER' => 'L',
   'LIST_MODE' => '',
   'RIGHTS_MODE' => 'S',
-  'SECTION_PROPERTY' => NULL,
-  'PROPERTY_INDEX' => NULL,
+  'SECTION_PROPERTY' => 'N',
+  'PROPERTY_INDEX' => 'N',
   'VERSION' => '1',
   'LAST_CONV_ELEMENT' => '0',
   'SOCNET_GROUP_ID' => NULL,
@@ -80,14 +80,14 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   'EDIT_FILE_AFTER' => '',
   'SECTIONS_NAME' => 'Разделы',
   'SECTION_NAME' => 'Раздел',
-  'ELEMENTS_NAME' => 'Новости',
-  'ELEMENT_NAME' => 'Новость',
-  'EXTERNAL_ID' => 'furniture_news_s1',
+  'ELEMENTS_NAME' => 'Вакансии',
+  'ELEMENT_NAME' => 'Вакансия',
+  'EXTERNAL_ID' => 'furniture_vacancies_s1',
   'LANG_DIR' => '/',
   'SERVER_NAME' => 'mirtrub.ru',
-  'ELEMENT_ADD' => 'Добавить новость',
-  'ELEMENT_EDIT' => 'Изменить новость',
-  'ELEMENT_DELETE' => 'Удалить новость',
+  'ELEMENT_ADD' => 'Добавить вакансию',
+  'ELEMENT_EDIT' => 'Изменить вакансию',
+  'ELEMENT_DELETE' => 'Удалить вакансию',
   'SECTION_ADD' => 'Добавить раздел',
   'SECTION_EDIT' => 'Изменить раздел',
   'SECTION_DELETE' => 'Удалить раздел',
@@ -112,7 +112,7 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   array (
     'NAME' => 'Начало активности',
     'IS_REQUIRED' => 'N',
-    'DEFAULT_VALUE' => '=today',
+    'DEFAULT_VALUE' => '',
   ),
   'ACTIVE_TO' => 
   array (
@@ -164,7 +164,7 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   array (
     'NAME' => 'Тип описания для анонса',
     'IS_REQUIRED' => 'Y',
-    'DEFAULT_VALUE' => 'html',
+    'DEFAULT_VALUE' => 'text',
   ),
   'PREVIEW_TEXT' => 
   array (
@@ -201,7 +201,7 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   array (
     'NAME' => 'Тип детального описания',
     'IS_REQUIRED' => 'Y',
-    'DEFAULT_VALUE' => 'html',
+    'DEFAULT_VALUE' => 'text',
   ),
   'DETAIL_TEXT' => 
   array (
@@ -336,103 +336,33 @@ class IB_VACANCIES_MAIN_2020_08_2820200828161510 extends Version
   'everyone' => 'R',
   'content_editor' => 'W',
 ));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'Заголовок окна браузера',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'TITLE',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => NULL,
-  'HINT' => '',
-));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'Описание',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'DESCRIPTION',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => NULL,
-  'HINT' => '',
-));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'Ключевые слова',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'KEYWORDS',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => NULL,
-  'HINT' => '',
-));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'Расширенный заголовок',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'LONGTITLE',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => NULL,
-  'HINT' => '',
-));
     $helper->UserOptions()->saveElementGrid($iblockId, array (
+  'views' => 
+  array (
+    'default' => 
+    array (
+      'columns' => 
+      array (
+        0 => '',
+      ),
+      'columns_sizes' => 
+      array (
+        'expand' => 1,
+        'columns' => 
+        array (
+        ),
+      ),
+      'sticked_columns' => 
+      array (
+      ),
+    ),
+  ),
+  'filters' => 
+  array (
+  ),
+  'current_view' => 'default',
+));
+    $helper->UserOptions()->saveSectionGrid($iblockId, array (
   'views' => 
   array (
     'default' => 

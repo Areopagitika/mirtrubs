@@ -41,7 +41,21 @@
                                 <?=str_repeat("</ul></li>", ($previousLevel-1) );?>
                             <?endif?>
 
-                            <ul class="d-sm-block d-md-none">
+                            <?$APPLICATION->IncludeComponent("bitrix:menu","mb_menu",Array(
+                                    "ROOT_MENU_TYPE" => "top", 
+                                    "MAX_LEVEL" => "2", 
+                                    "CHILD_MENU_TYPE" => "subtop", 
+                                    "USE_EXT" => "Y",
+                                    "DELAY" => "N",
+                                    "ALLOW_MULTI_SELECT" => "Y",
+                                    "MENU_CACHE_TYPE" => "N", 
+                                    "MENU_CACHE_TIME" => "3600", 
+                                    "MENU_CACHE_USE_GROUPS" => "Y", 
+                                    "MENU_CACHE_GET_VARS" => "" 
+                                )
+                            );?>
+
+                            <!-- <ul class="d-sm-block d-md-none">
                                 <li class="first"><a href="o-kompanii/">О компании</a>
                                     <ul class="">
                                         <li class="first"><a href="o-kompanii/istoriya-kompanii">История компании</a></li>
@@ -67,7 +81,7 @@
                                         <li class="last"><a href="kontakti/dileryi/">Дилеры</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                             <li class="m-search">
                                 <a href="#" style="cursor:pointer;pointer-events: auto;"><span style="font-size:10px;opacity: 0.5;">Поиск</span> <i class="fa fa-search"></i></a>

@@ -35,6 +35,19 @@ $APPLICATION->SetTitle("Доставка");
         <p>Итоговая стоимость зависит от нескольких факторов. В частности, от количества транспортируемой продукции, ее длины, веса, расстояния и, конечно же, способа доставки.</p>
         <p><strong>Все тарифы на доставку обсуждаются и утверждаются с каждым клиентом в индивидуальном порядке. Чтобы узнать больше актуальной информации, свяжитесь с нами по номеру, указанному на официальном сайте компании Миртрубпласт. Мы всегда готовы помочь.</strong></p>
     </div>
+    <?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+            "ROOT_MENU_TYPE" => "neighbours", 
+            "MAX_LEVEL" => "1", 
+            "CHILD_MENU_TYPE" => "top", 
+            "USE_EXT" => "Y",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "Y",
+            "MENU_CACHE_TYPE" => "N", 
+            "MENU_CACHE_TIME" => "3600", 
+            "MENU_CACHE_USE_GROUPS" => "Y", 
+            "MENU_CACHE_GET_VARS" => "" 
+        )
+    );?>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

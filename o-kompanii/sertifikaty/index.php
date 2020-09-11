@@ -36,8 +36,8 @@ $APPLICATION->SetTitle("Сертификаты");
             "DISPLAY_PICTURE" => "Y",
             "DISPLAY_PREVIEW_TEXT" => "Y",
             "DISPLAY_TOP_PAGER" => "Y",
-            "ELEMENT_CODE" => "",
-            "ELEMENT_ID" => "34",
+            "ELEMENT_CODE" => "sertifikatyi-i-razresheniya",
+            "ELEMENT_ID" => "",
             "FIELD_CODE" => array(
                 0 => "ID",
                 1 => "",
@@ -48,7 +48,7 @@ $APPLICATION->SetTitle("Сертификаты");
             ),
             "IBLOCK_ID" => getIblockID("photogallery", "photogallery"),
             "IBLOCK_TYPE" => "photogallery",
-            "IBLOCK_URL" => "news.php?ID=#IBLOCK_ID#\"",
+            "IBLOCK_URL" => "",
             "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
             "MESSAGE_404" => "",
             "META_DESCRIPTION" => "-",
@@ -86,6 +86,19 @@ $APPLICATION->SetTitle("Сертификаты");
             "COMPONENT_TEMPLATE" => "photogallery"
         ),
         false
+    );?>
+    <?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+            "ROOT_MENU_TYPE" => "neighbours", 
+            "MAX_LEVEL" => "1", 
+            "CHILD_MENU_TYPE" => "top", 
+            "USE_EXT" => "Y",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "Y",
+            "MENU_CACHE_TYPE" => "N", 
+            "MENU_CACHE_TIME" => "3600", 
+            "MENU_CACHE_USE_GROUPS" => "Y", 
+            "MENU_CACHE_GET_VARS" => "" 
+        )
     );?>
 </div>
 

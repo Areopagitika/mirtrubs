@@ -3,9 +3,9 @@
 namespace Sprint\Migration;
 
 
-class IB_VACANCIES_2020_08_2820200828161428 extends Version
+class IB_ELEMENTS_VACANCIES_2020_09_1120200911211234 extends Version
 {
-    protected $description = "IB_VACANCIES_2020_08_28";
+    protected $description = "";
 
     protected $moduleVersion = "3.16.3";
 

@@ -151,6 +151,19 @@ $APPLICATION->SetTitle("Контакты");
         <h3>Схема проезда центрального офиса:</h3>
         <iframe frameborder="0" height="400" src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=1354494035" width="100%"></iframe>
     </div>
+    <?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+            "ROOT_MENU_TYPE" => "neighbours", 
+            "MAX_LEVEL" => "1", 
+            "CHILD_MENU_TYPE" => "top", 
+            "USE_EXT" => "Y",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "Y",
+            "MENU_CACHE_TYPE" => "N", 
+            "MENU_CACHE_TIME" => "3600", 
+            "MENU_CACHE_USE_GROUPS" => "Y", 
+            "MENU_CACHE_GET_VARS" => "" 
+        )
+    );?>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

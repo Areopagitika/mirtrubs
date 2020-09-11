@@ -140,7 +140,7 @@
           <ul>
             <li><span itemprop="name"><?=$arSite["NAME"]; ?></span> © 2002-<?=date('Y'); ?></li>
             <li>Все права защищены.</li>
-            <li><a href="https://mirtrub.ru/privacy" title="Политика персональных данных" target="_blank">Политика персональных данных</a></li>
+            <li><a href="/privacy/" title="Политика персональных данных" target="_blank">Политика персональных данных</a></li>
           </ul>
       </div>
       <div class="col-md-3">

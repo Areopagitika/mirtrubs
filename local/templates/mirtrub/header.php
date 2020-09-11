@@ -194,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     "MENU_CACHE_GET_VARS" => "" 
   )
 );?>
-<? $arrTemltateDefault = ['/', '/o-kompanii/nashi-lica/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/']?>
+<? $arrTemltateDefault = ['/', '/o-kompanii/nashi-lica/', '/search/', '/polietilenovie-trubi/', '/trubyi-mirtekt/', '/fitingi/']?>
 <? if($APPLICATION->GetCurDir() != '/'): ?>
   <? if(in_array($APPLICATION->GetCurDir(), $arrTemltateDefault) || preg_match('#\/polietilenovie-trubi\/*#', $APPLICATION->GetCurDir()) || preg_match('#\/trubyi-mirtekt\/*#', $APPLICATION->GetCurDir()) || preg_match('#\/fitingi/fitingi-elektrosvarnyie\/*#', $APPLICATION->GetCurDir())): ?>
     <section>

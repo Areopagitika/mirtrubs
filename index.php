@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Главная");
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/fitingi-segmentnie.png" loading="lazy" alt="">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/fitingi-segmentnie.png" loading="lazy" alt="">
 							<div class="slider-title">
 								Новый цех сварных фитингов
 							</div>
@@ -35,7 +35,7 @@ $APPLICATION->SetTitle("Главная");
 						</div>
 						
 						<div class="carousel-item">
-							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/pe-truba-710.png" loading="lazy" alt="">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/pe-truba-710.png" loading="lazy" alt="">
 							<div class="slider-title">
 								Производство ПЭ трубы 710 диаметра
 							</div>
@@ -49,9 +49,9 @@ $APPLICATION->SetTitle("Главная");
 						<div class="carousel-item">
 							
 							<picture>
-							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-sm.png" media="(max-width: 768px)">
-								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-1.png">
-								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/map-russia-1.png" loading="lazy" alt="">
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/map-russia-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/map-russia-1.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/map-russia-1.png" loading="lazy" alt="">
 							</picture>
 							<!--
 							<img class="lazyload" data-src="assets/uploads/slider/map-russia.png" loading="lazy" alt="">
@@ -69,9 +69,9 @@ $APPLICATION->SetTitle("Главная");
 						
 						<div class="carousel-item">
 							<picture>
-							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-sm.png" media="(max-width: 768px)">
-								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi.png">
-								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi.png" loading="lazy" alt="">
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi.png" loading="lazy" alt="">
 							</picture>
 							<!--
 							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi.png" loading="lazy" alt="">
@@ -88,7 +88,7 @@ $APPLICATION->SetTitle("Главная");
 						</div>
 						
 						<div class="carousel-item">
-							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-vodi.png" loading="lazy" alt="">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-dlya-vodi.png" loading="lazy" alt="">
 							<div class="slider-title">
 								ПНД трубы для воды
 							</div>
@@ -102,9 +102,9 @@ $APPLICATION->SetTitle("Главная");
 						
 						<div class="carousel-item">
 							<picture>
-							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-sm.png" media="(max-width: 768px)">
-								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-1.png">
-								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-dlya-gaza-1.png" loading="lazy" alt="">
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-dlya-gaza-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-dlya-gaza-1.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-dlya-gaza-1.png" loading="lazy" alt="">
 							</picture>
 							<!--
 							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-dlya-gaza.png" loading="lazy" alt="">
@@ -122,9 +122,9 @@ $APPLICATION->SetTitle("Главная");
 						
 						<div class="carousel-item">
 							<picture>
-							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-tehnicheskie-sm.png" media="(max-width: 768px)">
-								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/slider/polietilenovie-trubi-tehnicheskie-sm.png">
-								<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-tehnicheskie-1.png" loading="lazy" alt="">
+							<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-tehnicheskie-sm.png" media="(max-width: 768px)">
+								<source srcset="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-tehnicheskie-sm.png">
+								<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/polietilenovie-trubi-tehnicheskie-1.png" loading="lazy" alt="">
 							</picture>
 							<!--
 							<img class="lazyload" data-src="assets/uploads/slider/polietilenovie-trubi-tehnicheskie.png" loading="lazy" alt="">
@@ -140,7 +140,7 @@ $APPLICATION->SetTitle("Главная");
 						</div>
 						
 						<div class="carousel-item">
-							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/slider/mirtekt.png" loading="lazy" alt="">
+							<img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/slider/mirtekt.png" loading="lazy" alt="">
 							<div class="slider-title">
 								Трубы в защитной оболочке (МИРТЕКТ)
 							</div>

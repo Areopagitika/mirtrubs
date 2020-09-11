@@ -72,7 +72,11 @@
                             <li class="m-search">
                                 <a href="#" style="cursor:pointer;pointer-events: auto;"><span style="font-size:10px;opacity: 0.5;">Поиск</span> <i class="fa fa-search"></i></a>
                                 <div class="form">
-                                            
+                                    <?$APPLICATION->IncludeComponent("bitrix:search.form","main",Array(
+                                            "USE_SUGGEST" => "N",
+                                            "PAGE" => "#SITE_DIR#search/index.php"
+                                        )
+                                    );?> 
                                 </div>
                             </li>
                         </ul>

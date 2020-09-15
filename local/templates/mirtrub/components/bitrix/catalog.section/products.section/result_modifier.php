@@ -1,8 +1,8 @@
 <?php
 
-global $arCity;
+$arCity = \Local\City::getItem();
 
-$rsSection = CIBlockSection::GetList([], ["IBLOCK_ID" => $arResult["IBLOCK_ID"], "ID" => $arResult["ID"]], false, ["ID", "NAME", "DESCRIPTION", "IBLOCK_SECTION_ID", "UF_*"]);
+$rsSection = CIBlockSection::GetList([], ["IBLOCK_ID" => $arResult["IBLOCK_ID"], "ID" => $arResult["ID"]], true, ["ID", "NAME", "DESCRIPTION", "IBLOCK_SECTION_ID", "UF_*"]);
 while($rsResult = $rsSection->GetNext()) $arResult["SECTION_DATA"] = $rsResult;
 $arrFields = ["DESCRIPTION", "UF_LONGTITLE", "UF_DESCRIPTION"];
 foreach($arResult["SECTION_DATA"] as $key => $value) {

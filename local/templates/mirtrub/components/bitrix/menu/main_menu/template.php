@@ -5,7 +5,6 @@
         <div class="row">
             <div class="col">
                 <nav class="menu" id="menu">
-                <? logger($arResult); ?>
                     <?if (!empty($arResult)):?>
                         <ul>
                             <li>
@@ -54,34 +53,6 @@
                                     "MENU_CACHE_GET_VARS" => "" 
                                 )
                             );?>
-
-                            <!-- <ul class="d-sm-block d-md-none">
-                                <li class="first"><a href="o-kompanii/">О компании</a>
-                                    <ul class="">
-                                        <li class="first"><a href="o-kompanii/istoriya-kompanii">История компании</a></li>
-                                        <li><a href="o-kompanii/proizvodstvo">Производство</a></li>
-                                        <li><a href="o-kompanii/nashi-lica">Наш коллектив</a></li>
-                                        <li><a href="o-kompanii/foto/">Фотогалерея</a></li>
-                                        <li><a href="o-kompanii/diplomi-blagodarnosti">Дипломы и благодарности</a></li>
-                                        <li><a href="o-kompanii/sertifikaty/">Документация</a>
-                                            <ul class="">
-                                                <li class="first"><a href="o-kompanii/sertifikaty/gostyi">ГОСТы</a></li>
-                                                <li class="last"><a href="o-kompanii/sertifikaty/katalogi-trub">Каталоги труб</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="last"><a href="o-kompanii/otzivi/">Отзывы</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="delivery">Доставка</a></li>
-                                <li><a href="news/">Новости</a></li>
-                                <li><a href="vakansii">Вакансии</a></li>
-                                <li class="last"><a href="kontakti/">Контакты</a>
-                                    <ul class="">
-                                        <li class="first"><a href="kontakti/filialyi/">Филиалы</a></li>
-                                        <li class="last"><a href="kontakti/dileryi/">Дилеры</a></li>
-                                    </ul>
-                                </li>
-                            </ul> -->
 
                             <li class="m-search">
                                 <a href="#" style="cursor:pointer;pointer-events: auto;"><span style="font-size:10px;opacity: 0.5;">Поиск</span> <i class="fa fa-search"></i></a>

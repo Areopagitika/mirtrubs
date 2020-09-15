@@ -24,15 +24,14 @@ $this->setFrameMode(true);
     <? endif; ?>
 </div>
         
-<? if(!empty($arResult["SECTION_DATA"]["ELEMENT_CNT"])): ?>
-    <h3>Всего результатов: <span id="mse2_total"><?=$arResult["SECTION_DATA"]["ELEMENT_CNT"]; ?></span></h3>
+<? if(!empty($arResult["ELEMENTS_COUNT"])): ?>
+    <h3>Всего результатов: <span id="mse2_total"><?=$arResult["ELEMENTS_COUNT"]; ?></span></h3>
 <? endif; ?>
 
 <div id="mse2_selected_wrapper">
     <div id="mse2_selected" style="display: none;"></div>
 </div>
-
-<div class="table table-product">
+<div class="table table-product" id="mse2_mfilter">
     <div class="thead">
         <div class="tr">
             <div class="td">Марка SDR Диаметр</div>
@@ -82,38 +81,7 @@ $this->setFrameMode(true);
     <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
         <? echo $arResult["NAV_STRING"]; ?>
     <? endif; ?>
-
-    <button class="btn btn-default btn_more">Загрузить еще</button>
-</div>          
-
-<ul class="nav menu-trubi">
-    <li>
-        <a href="polietilenovie-trubi/trubi-dlya-vodosnabjeniya/" title="Полиэтиленовые трубы для воды">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-dlya-vodi.jpg" alt="Полиэтиленовые трубы для водопровода">
-            <span>Трубы для воды</span>
-            <div class="menu-param">Диаметр: Ø D20 - D1200</div>
-            <div class="menu-param">SDR: 7,4 - 33</div>
-            <div class="menu-param">ГОСТ: 18599-2003</div>
-        </a>
-    </li>
-    <li>
-        <a href="polietilenovie-trubi/trubi-dlya-gazoprovodov/" title="Полиэтиленовые трубы для газа">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-dlya-gaza.jpg" alt="Полиэтиленовые трубы для газопровода">
-            <span>Трубы для газа</span>
-            <div class="menu-param">Диаметр: Ø D32 - D560</div>
-            <div class="menu-param">SDR: 7,4 - 17,5</div>
-            <div class="menu-param">ГОСТ: Р50838-2009</div>
-        </a>
-    </li>
-    <li>
-        <a href="polietilenovie-trubi/trubyi-dlya-kanalizaczii/" title="Полиэтиленовые трубы для канализации">
-            <img src="/assets/uploads/trubi/polietilenovie-trubi-tehnicheskie.jpg" alt="Полиэтиленовые трубы технические">
-            <span>Трубы для канализации</span>
-            <div class="menu-param">Диаметр: Ø D30 - D160</div>
-            <div class="menu-param">ГОСТ: 22689.0-89</div>
-        </a>
-    </li>
-</ul>
+</div>
 
 <? if(!empty($arResult["SECTION_DATA"]["DESCRIPTION"])): ?>
     <?=$arResult["SECTION_DATA"]["DESCRIPTION"]?>

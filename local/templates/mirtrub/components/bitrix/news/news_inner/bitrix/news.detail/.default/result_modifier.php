@@ -1,17 +1,14 @@
 <?php
 
-// Фильтр
 $filter = array(
     'IBLOCK_ID' => $arParams['IBLOCK_ID'],
     'ACTIVE' => 'Y'
 );
 
-// Сортировка
 $order = array(
     "SORT"=>"ASC"
 );
 
-// Выборка текущего и соседних товаров
 $nav = array(
     'nElementID' => $arResult['ID'],
     'nPageSize' => 1

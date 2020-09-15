@@ -17,8 +17,6 @@ $this->setFrameMode(true);
 
 ?>
 
-<? logger($arResult); ?>
-
 <div itemscope itemtype="https://schema.org/Product">
     <h1 itemprop="name">
 		<? if($arResult["PROPERTIES"]["IN_PRODUCTION"]["VALUE"]): ?>
@@ -252,9 +250,48 @@ $this->setFrameMode(true);
     
 <h3 class="looked-title mt-4">Похожие товары</h3>
 <div class="row">
-	<!-- modRelated -->
+	<? foreach ($arResult["PRODUCTS_SIMILAR"] as $arProduct): ?>
+		<div class="col-md-2">
+			<div class="product-item text-center">
+				<form method="post" class="ms2_form">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="img pb-2">
+								<a href="<?=$arProduct["DETAIL_PAGE_URL"]; ?>">
+									<? if($arProduct["PREVIEW_PICTURE"]): ?>
+										<img src="<?=$arProduct["PREVIEW_PICTURE"]; ?>" alt="<?=$arProduct["NAME"]; ?>" title="<?=$arProduct["NAME"]; ?>">
+									<? endif; ?>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="title">
+								<a href="<?=$arProduct["DETAIL_PAGE_URL"]; ?>" title="ПЭ-100 SDR-7,4 D 1000"><?=$arProduct["NAME"]; ?></a>
+							</div>
+							<div class="weight pb-2">
+								Вес: <span><?=$arProduct["PROPERTY_WEIGHT_VALUE"] ?: 0 ?></span> кг.</div>
+						</div>
+						<div class="col-md-12">
+							<a class="btn-tovar" href="#product" data-toggle="modal" data-target=".order" onclick="yaCounter25615220.reachGoal('open-form'); return true;">По запросу</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	<? endforeach; ?>
 </div>
 
-<!-- looked -->
-
-<a href="[[~[[*parent]]]]" id="backbutton">⬅</a>
+<div class="neighbors d-flex justify-content-between">
+    <?if(!is_null($arResult["NAV"]["PREV"])): ?>
+        <span class="link-prev">
+            <a href="<?=$arResult["NAV"]["PREV"]["DETAIL_PAGE_URL"]; ?>">
+                <i class="fa fa-long-arrow-left"></i> <?=$arResult["NAV"]["PREV"]["NAME"]; ?></a>
+        </span>
+    <? endif; ?>
+    <?if(!is_null($arResult["NAV"]["NEXT"])): ?>
+        <span class="link-next">
+            <a href="<?=$arResult["NAV"]["NEXT"]["DETAIL_PAGE_URL"]; ?>"><?=$arResult["NAV"]["NEXT"]["NAME"]; ?> <i class="fa fa-long-arrow-right"></i></a>
+        </span>
+    <? endif; ?>
+    </div>
+</div>

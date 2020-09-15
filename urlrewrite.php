@@ -8,6 +8,14 @@ $arUrlRewrite=array (
     'PATH' => '/fitingi/fitingi-elektrosvarnyie/detail.php',
     'SORT' => 100,
   ),
+  11 => 
+  array (
+    'CONDITION' => '#^/fitingi/(.+?)/(.+?)/\\??(.*)#',
+    'RULE' => 'SECTION_CODE_PATH=$1&SMART_FILTER_PATH=$2&$3',
+    'ID' => 'bitrix:catalog.smart.filter',
+    'PATH' => '/fitingi/fitingi-elektrosvarnyie/index.php',
+    'SORT' => 100,
+  ),
   7 => 
   array (
     'CONDITION' => '#^/svarochnoe-oborudovanie/#',
@@ -70,14 +78,6 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/news/index.php',
-    'SORT' => 100,
-  ),
-  11 => 
-  array (
-    'CONDITION' => '#^/#',
-    'RULE' => '',
-    'ID' => 'bitrix:catalog',
-    'PATH' => '/fitingi/fitingi-elektrosvarnyie/index.php',
     'SORT' => 100,
   ),
 );

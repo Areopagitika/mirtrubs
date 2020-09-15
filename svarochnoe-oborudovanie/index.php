@@ -55,7 +55,7 @@ $APPLICATION->SetTitle("Сварочное оборудование");
     "PAGER_PARAMS_NAME" => "arrPager",
     "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
     "USE_PERMISSIONS" => "Y",
-    "GROUP_PERMISSIONS" => Array("1"),
+    "GROUP_PERMISSIONS" => Array("2"),
     "CACHE_TYPE" => "A",
     "CACHE_TIME" => "3600",
     "CACHE_FILTER" => "Y",

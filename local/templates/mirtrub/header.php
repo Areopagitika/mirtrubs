@@ -4,8 +4,11 @@
   use Bitrix\Main\Page\Asset;
   \CJSCore::Init();
   $arSite = \Bitrix\Main\SiteTable::getById(SITE_ID)->fetch();
-  $arCity = \Local\City::getItem();
-  \Local\FormHelper::sanitize_fields(array("name"=> "post"));
+
+  $GLOBALS["arCity"] = \Local\City::getItem();
+
+  $obCache = new CPHPCache();
+  $obCache->CleanDir();
 ?>
 
 <!DOCTYPE html>

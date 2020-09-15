@@ -37,7 +37,7 @@ else
                 "CACHE_TYPE" => $arParams["CACHE_TYPE"],
                 "CACHE_TIME" => $arParams["CACHE_TIME"],
                 "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-                "SAVE_IN_SESSION" => "N",
+                "SAVE_IN_SESSION" => "Y",
                 "FILTER_VIEW_MODE" => $arParams["FILTER_VIEW_MODE"],
                 "XML_EXPORT" => "N",
                 "SECTION_TITLE" => "NAME",
@@ -60,6 +60,8 @@ else
 </div>
 
 <div class="col-md-9">
+    <? $APPLICATION->ShowViewContent("section_top"); ?>
+
     <? $intSectionID = $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",
         "",
@@ -189,4 +191,6 @@ else
         $component
     );
     ?>
+
+    <? $APPLICATION->ShowViewContent("section_bottom"); ?>
 </div>

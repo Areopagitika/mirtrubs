@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Фланцевое соединение, компрессионные фитинги для труб " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Муфты компрессионные, компрессионные фитинги ПНД. Фланцевое соединение трубопроводов недорого. Купить компрессионные фитинги " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("keywords", "фланцевое соединение, компрессионные фитинги, компрессионные фитинги для труб");
 $APPLICATION->SetTitle("Фитинги компрессионные");
 ?>
 

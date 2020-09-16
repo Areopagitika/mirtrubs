@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Полиэтиленовый сварочный аппарат для труб " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Сварочный аппарат для сварки полиэтиленовых труб недорого. Сварочное оборудование для полиэтиленовых труб " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("keywords", "полиэтиленовый сварочный аппарат, сварочные аппараты для полиэтиленовых труб, сварочный аппарат для сварки полиэтиленовых труб");
 $APPLICATION->SetTitle("Сварочное оборудование");
 ?>
 

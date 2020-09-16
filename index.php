@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("keywords", "завод по производству полиэтиленовых труб, трубные заводы полиэтиленовых труб, завод производство пэ труб");
-$APPLICATION->SetPageProperty("title", "Завод по производству и изготовлению полиэтиленовых (ПЭТ) труб #WHERE#");
-$APPLICATION->SetPageProperty("description", "Завод изготовитель полиэтиленовых (ПЭ) труб. Поставка полиэтиленовых труб #WHERE#. Завод полиэтиленовых труб официальный сайт");
+$APPLICATION->SetPageProperty("title", "Завод по производству и изготовлению полиэтиленовых (ПЭТ) труб " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Завод изготовитель полиэтиленовых (ПЭ) труб. Поставка полиэтиленовых труб " . $arCity["UF_WHERE"] . ". Завод полиэтиленовых труб официальный сайт");
 $APPLICATION->SetTitle("Главная");
 ?>
 

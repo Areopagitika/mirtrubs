@@ -47,10 +47,10 @@ nav .m-search .form {
     z-index: 2000;
 }
 
-.header-login {
+/*.header-login {
     z-index: 99;
-    /* z-index: 1010; */
-}
+    z-index: 1010; 
+}*/
 
 .header-login .social a {
       color: #537fbe;

@@ -2,17 +2,9 @@
 $arUrlRewrite=array (
   10 => 
   array (
-    'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/([\\w,-]+)/([^/]*)#',
-    'RULE' => 'ELEMENT_CODE=$1',
-    'ID' => 'bitrix:catalog.element',
-    'PATH' => '/fitingi/fitingi-elektrosvarnyie/detail.php',
-    'SORT' => 100,
-  ),
-  11 => 
-  array (
-    'CONDITION' => '#^/fitingi/(.+?)/(.+?)/\\??(.*)#',
-    'RULE' => 'SECTION_CODE_PATH=$1&SMART_FILTER_PATH=$2&$3',
-    'ID' => 'bitrix:catalog.smart.filter',
+    'CONDITION' => '#^/fitingi/fitingi-elektrosvarnyie/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
     'PATH' => '/fitingi/fitingi-elektrosvarnyie/index.php',
     'SORT' => 100,
   ),

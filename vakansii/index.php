@@ -6,10 +6,10 @@ $APPLICATION->SetTitle("Вакансии");
 ?>
 <div itemscope="" itemtype="https://schema.org/Article">
 	<div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
-		<meta itemprop="name" content="ООО «МИРТРУБПЛАСТ»">
+		<meta itemprop="name" content='<?$arSite["NAME"]; ?>'>
 		<meta itemprop="telephone" content="8 800 555 28 29">
 		<meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
-		<link itemprop="url" href="/vakansii">
+		<link itemprop="url" href="<?=$APPLICATION->GetCurPage(); ?>">
 	</div>		
 	<?$APPLICATION->IncludeComponent(
 		"bitrix:news", 
@@ -42,10 +42,7 @@ $APPLICATION->SetTitle("Вакансии");
 			"DETAIL_PAGER_SHOW_ALL" => "Y",
 			"DETAIL_PAGER_TEMPLATE" => "",
 			"DETAIL_PAGER_TITLE" => "Страница",
-			"DETAIL_PROPERTY_CODE" => array(
-				0 => "",
-				1 => "",
-			),
+			"DETAIL_PROPERTY_CODE" => array("TITLE", "DESCRIPTION", "KEYWORDS"),
 			"DETAIL_SET_CANONICAL_URL" => "Y",
 			"DISPLAY_AS_RATING" => "rating",
 			"DISPLAY_BOTTOM_PAGER" => "N",
@@ -155,21 +152,5 @@ $APPLICATION->SetTitle("Вакансии");
 		),
 		false
 	);?>
-	<p>&nbsp;</p>
-	<p>Резюме отправлять на электронный адрес: <a href="mailto:2285050@bk.ru" target="_blank">2285050@bk.ru</a></p>
-	<p><a href="tel:+7 (843) 228-50-50" onclick="ym(25615220, 'reachGoal', 'phone-78432285050'); return true;">+7 (843) 228-50-50</a></p>
-	<?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
-            "ROOT_MENU_TYPE" => "neighbours", 
-            "MAX_LEVEL" => "1", 
-            "CHILD_MENU_TYPE" => "top", 
-            "USE_EXT" => "Y",
-            "DELAY" => "N",
-            "ALLOW_MULTI_SELECT" => "Y",
-            "MENU_CACHE_TYPE" => "N", 
-            "MENU_CACHE_TIME" => "3600", 
-            "MENU_CACHE_USE_GROUPS" => "Y", 
-            "MENU_CACHE_GET_VARS" => "" 
-        )
-    );?>
 </div>
  <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

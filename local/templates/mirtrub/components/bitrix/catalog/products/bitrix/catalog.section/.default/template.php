@@ -13,24 +13,23 @@
 $this->setFrameMode(true);
 ?>
 
-<?$this->SetViewTarget("section_top");?>
+<? $arSection["ELEMENTS_COUNT"] = CIBlockSection::GetSectionElementsCount($arParams['SECTION_ID'], ["CNT_ACTIVE" => "Y"]); ?>
 
-    <div class="d-none d-sm-none d-md-block">
-        <? if(!empty($arResult["SECTION_DATA"]["UF_LONGTITLE"])): ?>
-            <h1><?=$arResult["SECTION_DATA"]["UF_LONGTITLE"]; ?></h1>
-        <? else: ?>
-            <h1><?=$arResult["SECTION_DATA"]["NAME"]; ?></h1>
-        <? endif; ?>
-        <? if(!empty($arResult["SECTION_DATA"]["UF_DESCRIPTION"])): ?>
-            <h5 class="desc"><?=$arResult["SECTION_DATA"]["UF_DESCRIPTION"]; ?></h5>
-        <? endif; ?>
-    </div>
-            
-    <? if(!empty($arResult["ELEMENTS_COUNT"])): ?>
-        <h3>Всего результатов: <span id="mse2_total"><?=$arResult["ELEMENTS_COUNT"]; ?></span></h3>
+
+<div class="d-none d-sm-none d-md-block">
+    <? if(!empty($arResult["SECTION_DATA"]["UF_LONGTITLE"])): ?>
+        <h1><?=$arResult["SECTION_DATA"]["UF_LONGTITLE"]; ?></h1>
+    <? else: ?>
+        <h1><?=$arResult["SECTION_DATA"]["NAME"]; ?></h1>
     <? endif; ?>
-
-<?$this->EndViewTarget();?>
+    <? if(!empty($arResult["SECTION_DATA"]["UF_DESCRIPTION"])): ?>
+        <h5 class="desc"><?=$arResult["SECTION_DATA"]["UF_DESCRIPTION"]; ?></h5>
+    <? endif; ?>
+</div>
+        
+<? if(!empty($arResult["ELEMENTS_COUNT"])): ?>
+    <h3>Всего результатов: <span id="mse2_total"><?=$arResult["ELEMENTS_COUNT"]; ?></span></h3>
+<? endif; ?>
 
 <div id="mse2_selected_wrapper">
     <div id="mse2_selected" style="display: none;"></div>
@@ -89,32 +88,28 @@ $this->setFrameMode(true);
     <? endif; ?>
 </div>
 
-<?$this->SetViewTarget("section_bottom");?>
+<ul class="nav menu-trubi">
+    <? foreach($arResult["SECTIONS_DATA"] as $value): ?>
+    <li>
+        <a href="<?=$value["SECTION_PAGE_URL"]; ?>" title="">
+            <? if(!empty($value["PICTURE"])): ?>
+                <img src="<?=CFile::GetPath($value["PICTURE"]); ?>" alt="<?=$value["UF_LONGTITLE"]; ?>">
+            <? endif; ?>
+            <span><?=$value["NAME"]; ?></span>
+            <? if(!empty($value["UF_DIAMETER"])): ?>
+                <div class="menu-param">Диаметр: <?=$value["UF_DIAMETER"]; ?></div>
+            <? endif; ?>
+            <? if(!empty($value["UF_SDR"])): ?>
+                <div class="menu-param">SDR: <?=$value["UF_SDR"]; ?></div>
+            <? endif; ?>
+            <? if(!empty($value["UF_GOST"])): ?>
+                <div class="menu-param">ГОСТ: <?=$value["UF_GOST"]; ?></div>
+            <? endif; ?>
+        </a>
+    </li>
+    <? endforeach; ?>
+</ul>
 
-    <ul class="nav menu-trubi">
-        <? foreach($arResult["SECTIONS_DATA"] as $value): ?>
-        <li>
-            <a href="<?=$value["SECTION_PAGE_URL"]; ?>" title="">
-                <? if(!empty($value["PICTURE"])): ?>
-                    <img src="<?=CFile::GetPath($value["PICTURE"]); ?>" alt="<?=$value["UF_LONGTITLE"]; ?>">
-                <? endif; ?>
-                <span><?=$value["NAME"]; ?></span>
-                <? if(!empty($value["UF_DIAMETER"])): ?>
-                    <div class="menu-param">Диаметр: <?=$value["UF_DIAMETER"]; ?></div>
-                <? endif; ?>
-                <? if(!empty($value["UF_SDR"])): ?>
-                    <div class="menu-param">SDR: <?=$value["UF_SDR"]; ?></div>
-                <? endif; ?>
-                <? if(!empty($value["UF_GOST"])): ?>
-                    <div class="menu-param">ГОСТ: <?=$value["UF_GOST"]; ?></div>
-                <? endif; ?>
-            </a>
-        </li>
-        <? endforeach; ?>
-    </ul>
-
-    <? if(!empty($arResult["SECTION_DATA"]["DESCRIPTION"])): ?>
-        <?=$arResult["SECTION_DATA"]["DESCRIPTION"]?>
-    <? endif; ?>
-
-<?$this->EndViewTarget();?>
+<? if(!empty($arResult["SECTION_DATA"]["DESCRIPTION"])): ?>
+    <?=$arResult["SECTION_DATA"]["DESCRIPTION"]?>
+<? endif; ?>

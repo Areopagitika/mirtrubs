@@ -20,7 +20,6 @@ else
 	$basketAction = isset($arParams['SECTION_ADD_TO_BASKET_ACTION']) ? $arParams['SECTION_ADD_TO_BASKET_ACTION'] : '';
 }
 ?>
-<? logger($arParams); ?>
 
 <div class="col-md-3">
     <? if ($isFilter): ?>
@@ -56,12 +55,57 @@ else
             array('HIDE_ICONS' => 'Y')
         );
         ?>
-    <? endif; ?>        
+    <? endif; ?>
+    <div class="d-none d-md-block">
+        <div class="fast-order">
+            <form action="" method="post" id="quick-order">
+                <div class="title">Быстрая заявка</div>
+                <div class="input">
+                  <input id="fullname" type="text" name="name" value="" placeholder="*Имя" />
+                </div>
+                <div class="input">
+                  <input type="text" name="phone" value="" placeholder="*Телефон" />
+                </div>
+                <input id="token" type="hidden" name="token">
+                <button type="submit" onclick="yaCounter25615220.reachGoal('online-zayavka'); return true;"><i class="fa fa-paper-plane-o"></i>&nbsp; Сделать заказ</button>
+                          
+            </form>
+        </div>
+        <div class="delivery">
+            <div class="title">Варианты доставки</div>
+            <div class="text">
+                Осуществляем доставку грузов своим транспортом. Имеем в наличии 10 большегрузных автомобилей. По вопросом перевозок обращайтесь к нашим менеджерам.
+                <br><br>
+                <a href="javascript:void(0)" onclick="jivo_api.open();"><i class="fa fa-pencil"></i> Написать менеджеру</a>
+            </div>
+        </div>
+        <div class="garant">
+            <div class="title">Наши гарантии</div>
+            <div class="text">
+                <img src="/manager/templates/ozzypro/img/garantiya-kachestva.png" alt="Гарантия качества - ТрубПласт">
+                <p><b>Почему более 65% наших клиентов становятся постоянными?</b></p>
+                <ul>
+                    <li><i class="fa fa-check"></i> Строго закрепляем объекты.</li>
+                    <li><i class="fa fa-check"></i> Жестко прописываем сроки поставок в договоре.</li>
+                    <li><i class="fa fa-check"></i> Отгружаем по п/п.</li>
+                    <li><i class="fa fa-check"></i> Глубокие скидки на крупный опт и предзаказ.</li>
+                    <li><i class="fa fa-check"></i> Свой автопарк.</li>
+                    <li><i class="fa fa-check"></i> Есть доставка ж/д.</li>
+                    <li><i class="fa fa-check"></i> Круглосуточный прием заявок и отгрузки.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="prices">
+            <div class="title">Спец условия оптовым и торгующим организациям</div>
+            <div class="text">
+                <p>Мы запустили обновленную партнерскую программу, позволяющую нашим оптовым клиентам зарабатывать еще больше. Звоните, обсудим условия!</p>
+                <a class="btn-yellow mb-2 wow shake" href="#online-order" data-toggle="modal" data-target=".online-order" data-wow-delay="2s" onclick="yaCounter25615220.reachGoal('open-form'); return true;"><i class="fa fa-check-circle-o"></i>&nbsp; Оставить заявку</a>
+            </div>
+        </div>
+    </div>      
 </div>
 
 <div class="col-md-9">
-    <? $APPLICATION->ShowViewContent("section_top"); ?>
-
     <? $intSectionID = $APPLICATION->IncludeComponent(
         "bitrix:catalog.section",
         "",
@@ -191,6 +235,4 @@ else
         $component
     );
     ?>
-
-    <? $APPLICATION->ShowViewContent("section_bottom"); ?>
 </div>

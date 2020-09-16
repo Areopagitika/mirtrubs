@@ -1,25 +1,7 @@
 <?php
 
-// Фильтр
-$filter = array(
-    'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-    'ACTIVE' => 'Y'
-);
-
-// Сортировка
-$order = array(
-    "SORT"=>"ASC"
-);
-
-// Выборка текущего и соседних товаров
-$nav = array(
-    'nElementID' => $arResult['ID'],
-    'nPageSize' => 1
-);
-
 $end = false;
-
-$db_res = CIBlockElement::GetList($order, $filter, false, $nav);
+$db_res = CIBlockElement::GetList(["SORT"=>"ASC"], ['IBLOCK_ID' => $arParams['IBLOCK_ID'], 'ACTIVE' => 'Y'], false, ['nElementID' => $arResult['ID'], 'nPageSize' => 1]);
 while ($res = $db_res->GetNext()) {
     if ($res['ID'] == $arResult['ID']) {
         $end = true;
@@ -28,4 +10,18 @@ while ($res = $db_res->GetNext()) {
     } else {
         $arResult['NAV']['PREV'] = $res;
     }
+}
+
+if(!empty($arResult["PROPERTIES"]["TITLE"]["VALUE"])) {
+    $APPLICATION->SetPageProperty("title", $arResult["PROPERTIES"]["TITLE"]["VALUE"]);
+} else {
+    $APPLICATION->SetPageProperty("title", $arResult["NAME"]);
+}
+
+if(!empty($arResult["PROPERTIES"]["DESCRIPTION"]["VALUE"])) {
+    $APPLICATION->SetPageProperty("title", $arResult["PROPERTIES"]["DESCRIPTION"]["VALUE"]);
+}
+
+if(!empty($arResult["PROPERTIES"]["KEYWORDS"]["VALUE"])) {
+    $APPLICATION->SetPageProperty("title", $arResult["PROPERTIES"]["KEYWORDS"]["VALUE"]);
 }

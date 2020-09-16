@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Заводы МИРТРУБПЛАСТ");
+$APPLICATION->SetPageProperty("description", "Чем отличаются заводы МИРТРУБПЛАСТ? Сколько их?");
+$APPLICATION->SetPageProperty("keywords", "");
 $APPLICATION->SetTitle("Политика обработки персональных данных ООО «МИРТРУБПЛАСТ»");
 ?>
 

@@ -17,18 +17,14 @@ $this->setFrameMode(true);
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>
 
-<h1 itemprop="name headline">Дилеры группы заводов ООО «МИРТРУБПЛАСТ»</h1>
-<h4 itemprop="description"></h4>
-<div itemprop="articleBody">
-	<ul class="">
-		<? foreach($arResult["ITEMS"] as $arItem): ?>
-        <li class="first">
-            <a href="<?=$arItem["DETAIL_PAGE_URL"]; ?>"><?=$arItem["NAME"]; ?></a>
-		</li>
-		<? endforeach; ?>
-    </ul>
-</div>
+<ul class="">
+	<? foreach($arResult["ITEMS"] as $arItem): ?>
+	<li class="first">
+		<a href="<?=$arItem["DETAIL_PAGE_URL"]; ?>"><?=$arItem["NAME"]; ?></a>
+	</li>
+	<? endforeach; ?>
+</ul>
 
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-	<br /><?=$arResult["NAV_STRING"]?>
+	<?=$arResult["NAV_STRING"]?>
 <?endif;?>

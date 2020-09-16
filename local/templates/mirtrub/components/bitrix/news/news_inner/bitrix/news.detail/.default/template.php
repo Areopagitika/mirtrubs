@@ -13,9 +13,24 @@
 $this->setFrameMode(true);
 ?>
 
+<? global $arSite; ?>
+
+<?
+    if(!empty($arResult["PROPERTIES"]["TITLE"]["VALUE"])) {
+        $APPLICATION->SetPageProperty("title", $arResult["PROPERTIES"]["TITLE"]["VALUE"]);
+    }
+
+    if(!empty($arResult["PROPERTIES"]["DESCRIPTION"]["VALUE"])) {
+        $APPLICATION->SetPageProperty("description", $arResult["PROPERTIES"]["DESCRIPTION"]["VALUE"]);    
+    }
+
+    if(!empty($arResult["PROPERTIES"]["KEYWORDS"]["VALUE"])) {
+        $APPLICATION->SetPageProperty("keywords", $arResult["PROPERTIES"]["KEYWORDS"]["VALUE"]);    
+    }
+?>
 <div itemscope="" itemtype="https://schema.org/Article">
     <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
-    <meta itemprop="name" content="ООО «МИРТРУБПЛАСТ»">
+    <meta itemprop="name" content='<?=$arSite["NAME"]; ?>'>
     <meta itemprop="telephone" content="8 800 555 28 29">
     <meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
     <link itemprop="url" href="<?=$arResult["DETAIL_PAGE_URL"]; ?>">

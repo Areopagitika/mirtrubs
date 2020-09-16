@@ -3,8 +3,8 @@
   IncludeTemplateLangFile(__FILE__);
   use Bitrix\Main\Page\Asset;
   \CJSCore::Init();
-  $arSite = \Bitrix\Main\SiteTable::getById(SITE_ID)->fetch();
 
+  $GLOBALS["arSite"] = \Bitrix\Main\SiteTable::getById(SITE_ID)->fetch();
   $GLOBALS["arCity"] = \Local\City::getItem();
 
   $obCache = new CPHPCache();
@@ -25,7 +25,7 @@
   <meta property="og:description" content="" />
   <meta property="og:image" content="<?=SITE_TEMPLATE_PATH; ?>/images/logo-mirtrubplast.png"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="<?=$APPLICATION->GetCurPage(); ?>" />
 
   <meta name="format-detection" content="telephone=yes">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

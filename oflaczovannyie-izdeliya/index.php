@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Изготовление офлацованных изделий из ПНД (ПЭ) труб");
+$APPLICATION->SetPageProperty("description", "Изготовление офлацованных изделий из ПНД (ПЭ) труб и нестандартных изделий из полиэтиленовых труб по эскизам заказчика.");
+$APPLICATION->SetPageProperty("keywords", "Изготовление офлацованных изделий, офлацованные изделия, офланцовка фитингов, удлинение втулок под фланец");
 $APPLICATION->SetTitle("Офланцованные изделия");
 ?>
 

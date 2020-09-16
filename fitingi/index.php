@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Полиэтиленовые фитинги, фитинги для полиэтиленовых труб " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Купить фитинги для полиэтиленовых труб. Фитинги SDR недорого " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("keywords", "полиэтиленовые фитинги, фитинги +для полиэтиленовых труб, фитинги sdr");
 $APPLICATION->SetTitle("Фитинги");
 ?>
 

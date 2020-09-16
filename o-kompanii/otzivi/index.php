@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Отзывы");
         <meta itemprop="name" content="<?=$arSite["NAME"]; ?>">
         <meta itemprop="telephone" content="8 800 555 28 29">
         <meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
-        <link itemprop="url" href="" />
+        <link itemprop="url" href="<?=$APPLICATION->GetCurPage(); ?>" />
     </div>
     <h1 itemprop="name headline">Отзывы наших клиентов</h1>
     <h4 itemprop="description">Отзывы о заводе ООО "МИРТРУБПЛАСТ". Отзыв о поставке. Сотрудничество и добропорядочные партнерские отношения. Компетентный профессиональный персонал.</h4>

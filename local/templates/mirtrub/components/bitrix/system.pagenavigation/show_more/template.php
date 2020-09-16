@@ -17,7 +17,7 @@ $this->createFrame()->begin("Загрузка навигации");
     <?else:?>
 
         <div class="load_more">
-            Загружено все
+            
         </div>
 
     <?endif?>

@@ -1,16 +1,16 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Новости компании МирТрубПласт #WHERE#");
+$APPLICATION->SetPageProperty("description", "Новости компании МирТрубПласт " . $arCity["UF_WHERE"]);
 $APPLICATION->SetPageProperty("title", "Новости");
 $APPLICATION->SetTitle("Новости");
 ?>
 
 <div itemscope="" itemtype="https://schema.org/Article">
 	<div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
-    	<meta itemprop="name" content="ООО «МИРТРУБПЛАСТ»">
+    	<meta itemprop="name" content='<?=$arSite["NAME"]; ?>'>
     	<meta itemprop="telephone" content="8 800 555 28 29">
     	<meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
-    	<link itemprop="url" href="https://mirtrub.ru/news/">
+    	<link itemprop="url" href="<?=$APPLICATION->GetCurPage(); ?>">
 	</div>	
 	<?$APPLICATION->IncludeComponent(
 		"bitrix:news", 
@@ -117,19 +117,6 @@ $APPLICATION->SetTitle("Новости");
 		),
 		false
 	);?>
-	<?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
-            "ROOT_MENU_TYPE" => "neighbours", 
-            "MAX_LEVEL" => "1", 
-            "CHILD_MENU_TYPE" => "top", 
-            "USE_EXT" => "Y",
-            "DELAY" => "N",
-            "ALLOW_MULTI_SELECT" => "Y",
-            "MENU_CACHE_TYPE" => "N", 
-            "MENU_CACHE_TIME" => "3600", 
-            "MENU_CACHE_USE_GROUPS" => "Y", 
-            "MENU_CACHE_GET_VARS" => "" 
-        )
-    );?>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

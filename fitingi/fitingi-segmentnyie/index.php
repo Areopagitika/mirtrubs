@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Отводы сегментные, фитинги сегментные " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Сварочные фитинги, отводы из сегментов. Сварочные фитинги ПНД недорого. Изготовление сегментных отводов " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("keywords", "отвод сегментный, сегментные фитинги, сварочный фитинг");
 $APPLICATION->SetTitle("Фитинги сегментные (сварные)");
 ?>
 

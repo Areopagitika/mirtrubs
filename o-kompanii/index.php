@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("О компании");
         <meta itemprop="name" content="<?=$arSite["NAME"]; ?>">
         <meta itemprop="telephone" content="8 800 555 28 29">
         <meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
-        <link itemprop="url" href="{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}" />
+        <link itemprop="url" href="<?=$APPLICATION->GetCurPage(); ?>" />
     </div>
     <h1 itemprop="name headline">Группа заводов полиэтиленовых труб «Миртрубпласт» (ООО "МИРТРУБПЛАСТ")</h1>
     <h4 itemprop="description">Продажа и поставка полиэтиленовых труб для водоснабжения, газопровода, канализации, оптом. ПЭ-100, ПЭ-80.100% Гарантия качества! Завод по производству полиэтиленовых труб - ООО «МИРТРУБПЛАСТ»</h4>

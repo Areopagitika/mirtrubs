@@ -176,7 +176,7 @@ $APPLICATION->SetTitle("Полиэтиленовые трубы"); ?>
 		"SECTION_TOP_DEPTH" => "1",
 		"SEF_FOLDER" => "/",
 		"SEF_MODE" => "Y",
-		"SEF_URL_TEMPLATES" => Array("compare"=>"compare/","element"=>"#SECTION_CODE_PATH#/#ELEMENT_CODE#/","section"=>"#SECTION_CODE_PATH#/","sections"=>"","smart_filter"=>"/#SECTION_CODE_PATH#/#SMART_FILTER_PATH#/"),
+		"SEF_URL_TEMPLATES" => Array("compare"=>"compare/","element"=>"#SECTION_CODE_PATH#/#ELEMENT_CODE#/","section"=>"#SECTION_CODE_PATH#/","sections"=>"","smart_filter"=>"/#SECTION_CODE_PATH#/"),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",

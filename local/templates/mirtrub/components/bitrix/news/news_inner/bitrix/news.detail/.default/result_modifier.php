@@ -1,22 +1,8 @@
 <?php
-
-$filter = array(
-    'IBLOCK_ID' => $arParams['IBLOCK_ID'],
-    'ACTIVE' => 'Y'
-);
-
-$order = array(
-    "SORT"=>"ASC"
-);
-
-$nav = array(
-    'nElementID' => $arResult['ID'],
-    'nPageSize' => 1
-);
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $end = false;
-
-$db_res = CIBlockElement::GetList($order, $filter, false, $nav);
+$db_res = CIBlockElement::GetList(["SORT"=>"ASC"], ['IBLOCK_ID' => $arParams['IBLOCK_ID'], 'ACTIVE' => 'Y'], false, ['nElementID' => $arResult['ID'], 'nPageSize' => 1]);
 while ($res = $db_res->GetNext()) {
     if ($res['ID'] == $arResult['ID']) {
         $end = true;

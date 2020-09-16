@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Дипломы и благодарности компании МирТрубПласт");
+$APPLICATION->SetPageProperty("title", "Дипломы и благодарности компании МирТрубПласт " . $arCity["UF_WHERE"]);
 $APPLICATION->SetPageProperty("description", "Дипломы и благодарности компании МирТрубПласт в Казани");
 $APPLICATION->SetTitle("Дипломы и благодарности");
 ?>
@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Дипломы и благодарности");
         <meta itemprop="name" content="<?=$arSite["NAME"]; ?>">
         <meta itemprop="telephone" content="8 800 555 28 29">
         <meta itemprop="address" content="420087, Россия, Республика Татарстан, Казань, Родины, 10">
-        <link itemprop="url" href="" />
+        <link itemprop="url" href="<?=$APPLICATION->GetCurPage(); ?>" />
 	</div>
     <?$APPLICATION->IncludeComponent(
         "bitrix:news.detail", 

@@ -1,5 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Литые заглушки, отводы, фитинги недорого " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("description", "Литые тройники, литые втулки, литые переходы. Литые фитинги ПЭ, ПНД. Полиэтиленовые отводы " . $arCity["UF_WHERE"]);
+$APPLICATION->SetPageProperty("keywords", "заглушки литые, отвод литой, литые фитинги");
 $APPLICATION->SetTitle("Фитинги литые");
 ?>
 

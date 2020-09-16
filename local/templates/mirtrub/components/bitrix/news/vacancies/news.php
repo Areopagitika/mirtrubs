@@ -66,3 +66,20 @@ $this->setFrameMode(true);
 	),
 	$component
 );?>
+
+<p>&nbsp;</p>
+<p>Резюме отправлять на электронный адрес: <a href="mailto:2285050@bk.ru" target="_blank">2285050@bk.ru</a></p>
+<p><a href="tel:+7 (843) 228-50-50" onclick="ym(25615220, 'reachGoal', 'phone-78432285050'); return true;">+7 (843) 228-50-50</a></p>
+<?$APPLICATION->IncludeComponent("bitrix:menu","neighbours",Array(
+		"ROOT_MENU_TYPE" => "neighbours", 
+		"MAX_LEVEL" => "1", 
+		"CHILD_MENU_TYPE" => "top", 
+		"USE_EXT" => "Y",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "Y",
+		"MENU_CACHE_TYPE" => "N", 
+		"MENU_CACHE_TIME" => "3600", 
+		"MENU_CACHE_USE_GROUPS" => "Y", 
+		"MENU_CACHE_GET_VARS" => "" 
+	)
+);?>

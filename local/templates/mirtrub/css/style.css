@@ -1,35 +1,27 @@
 /* Ozzy Pro */
 /* www.ozzy.pro */
-@font-face {
+/* @font-face {
   font-family: 'Roboto Light';
   font-display: swap;
   src: url('fonts/roboto-light.ttf') format('truetype');
-  
-  /* Гарнитура шрифта */
 }
 @font-face {
   font-family: 'Roboto Regular';
   font-display: swap;
   src: url('fonts/roboto-regular.ttf') format('truetype');
-  
-  /* Гарнитура шрифта */
 }
 @font-face {
   font-family: 'Roboto Thin';
   font-display: swap;
   src: url('fonts/roboto-thin.ttf') format('truetype');
-  
-  /* Гарнитура шрифта */
 }
 @font-face {
   font-family: 'Source Sans Pro';
   font-display: swap;
   src: url('fonts/source-sans-pro.ttf') format('truetype');
-  
-  /* Гарнитура шрифта */
-}
+} */
 body {
-  font-family: 'Roboto Regular', Arial;
+  font-family: 'TRY Clother', Arial;
   font-size: 90%;
 }
 body.modal-open {
@@ -835,7 +827,7 @@ header .logo {
   text-transform: uppercase;
 }
 .logo-img img {
-  width: 80px;
+  width: 100px;
 }
 header .logo-slogan {
   display: block;

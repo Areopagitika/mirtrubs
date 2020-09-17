@@ -51,6 +51,7 @@
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/libs/fotorama/fotorama.js");
 
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/bootstrap.min.css"); 
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."fonts/try-clother/stylesheet.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/style.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/dopfonts.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/libs/font-awesome-4.7.0/css/font-awesome.min.css");
@@ -134,7 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row d-none d-lg-flex">
       <div class="col-3 col-md-2">
         <a class="logo-img" href="/" title="">
-        <img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/logo-mirtrubplast.png" loading="lazy" alt=""/></a>
+        <img class="lazyload" data-src="<?=SITE_TEMPLATE_PATH; ?>/images/logo.png" loading="lazy" alt=""/></a>
       </div>
       <div class="col-9 col-md-3">
         <div class="phone"><a href="tel:88005552829" onclick="ym(25615220, 'reachGoal', 'phone-88005552829'); return true;">8 800 555 28 29</a></div>

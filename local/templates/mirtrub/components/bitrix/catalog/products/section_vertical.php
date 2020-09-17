@@ -82,7 +82,7 @@ else
         <div class="garant">
             <div class="title">Наши гарантии</div>
             <div class="text">
-                <img src="/manager/templates/ozzypro/img/garantiya-kachestva.png" alt="Гарантия качества - ТрубПласт">
+                <img src="<?=SITE_TEMPLATE_PATH; ?>/images/garantiya-kachestva.png" alt="Гарантия качества - ТрубПласт">
                 <p><b>Почему более 65% наших клиентов становятся постоянными?</b></p>
                 <ul>
                     <li><i class="fa fa-check"></i> Строго закрепляем объекты.</li>

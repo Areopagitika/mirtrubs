@@ -1,15 +1,15 @@
-@font-face {
+/* @font-face {
 	font-family: 'TRY Clother';
-	src: url('../fonts/try_clother.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/try_clother.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/try_clother.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/try_clother.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/try_clother.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/try_clother.svg#try_clother') format('svg'); /* Chrome < 4, Legacy iOS */
-}
+	src: url('../fonts/try_clother.eot');
+	src: url('../fonts/try_clother.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/try_clother.woff2') format('woff2'),
+		url('../fonts/try_clother.woff') format('woff'),
+		url('../fonts/try_clother.ttf') format('truetype'),
+		url('../fonts/try_clother.svg#try_clother') format('svg');
+} */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     /*font-family: 'TRY Clother';*/
     min-width:400px;
 }
@@ -96,7 +96,7 @@ header .phone {
 	display: none;
 }
 
-.contentblock img{
+.contentblock img:not('.fotorama_img img') {
     margin:25px;
 }
 

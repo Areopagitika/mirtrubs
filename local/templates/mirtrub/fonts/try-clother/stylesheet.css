@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'TRY Clother';
+    src: url('TRYClother-Bold.eot');
+    src: url('TRYClother-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TRYClother-Bold.woff2') format('woff2'),
+        url('TRYClother-Bold.woff') format('woff'),
+        url('TRYClother-Bold.ttf') format('truetype'),
+        url('TRYClother-Bold.svg#TRYClother-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TRY Clother';
+    src: url('TRYClother-Regular.eot');
+    src: url('TRYClother-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TRYClother-Regular.woff2') format('woff2'),
+        url('TRYClother-Regular.woff') format('woff'),
+        url('TRYClother-Regular.ttf') format('truetype'),
+        url('TRYClother-Regular.svg#TRYClother-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TRY Clother';
+    src: url('TRYClother-Light.eot');
+    src: url('TRYClother-Light.eot?#iefix') format('embedded-opentype'),
+        url('TRYClother-Light.woff2') format('woff2'),
+        url('TRYClother-Light.woff') format('woff'),
+        url('TRYClother-Light.ttf') format('truetype'),
+        url('TRYClother-Light.svg#TRYClother-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TRY Clother';
+    src: url('TRYClother-Black.eot');
+    src: url('TRYClother-Black.eot?#iefix') format('embedded-opentype'),
+        url('TRYClother-Black.woff2') format('woff2'),
+        url('TRYClother-Black.woff') format('woff'),
+        url('TRYClother-Black.ttf') format('truetype'),
+        url('TRYClother-Black.svg#TRYClother-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
